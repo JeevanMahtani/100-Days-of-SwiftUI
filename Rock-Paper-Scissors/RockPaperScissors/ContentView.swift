@@ -86,6 +86,7 @@ struct ContentView: View {
     }
     
     func playnewTurn() -> String {
+        
         turn += 1
         appChosenItem = choices[Int.random(in: 0...2)]
         isWinning = Bool.random()
