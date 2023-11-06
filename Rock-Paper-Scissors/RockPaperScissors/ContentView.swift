@@ -44,17 +44,8 @@ struct ContentView: View {
                 VStack(spacing: 60) {
                     
                     ForEach(0..<3) { item in
-                        Button {
+                        ChoiceButtonView(item: item, images: images) { _ in 
                             itemTapped(item)
-                        } label : {
-                            Image(systemName: images[item])
-                                .font(.title3)
-                                .padding()
-                                .foregroundStyle(.white)
-                                .frame(width: 200, height: 50)
-                                .background(.clear)
-                                .border(.ultraThickMaterial,width: 3)
-                                .cornerRadius(5)
                         }
                     }
                 }
@@ -82,7 +73,8 @@ struct ContentView: View {
                   dismissButton: .default(Text(alertButtonText)) {
                  
             })
-        }.animation(.easeInOut)
+        }
+        .animation(.easeInOut)
     }
     
     func playnewTurn() -> String {
