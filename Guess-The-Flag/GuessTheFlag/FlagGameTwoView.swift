@@ -9,11 +9,17 @@ import SwiftUI
 
 struct FlagGameTwoView: View {
     @State private var showingScore = false
+    @State private var flagMovement = 0.0
     @State private var score = 0
     @State private var questionCount = 0
     @State private var isLastQuestion = false
+    @State private var correctFlagOffset = 0.0
     @State private var scoreTitle = ""
+    @State private var flagNumber = 0
+    @State private var opacity = 1.0
     @State private var countries = ["Estonia", "France" , "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Spain", "UK", "Ukraine", "US"].shuffled()
+    
+    @State private var countriesList = [String: Bool]()
     
     @State private var correctAnswer = Int.random(in: 0...2)
     var body: some View {
@@ -36,13 +42,31 @@ struct FlagGameTwoView: View {
                             .font(.largeTitle.weight(.bold))
                     }
                     ForEach(0..<3) { number in
+                        
+                        
                         Button {
                             flagTapped(number)
-                        }label: {
-                            Image(countries[number])
-                                .clipShape(.capsule)
-                                .shadow(radius: 5)
+                            flagNumber = number
+                            flagMovement += 360
                         }
+                    label: {
+                        Image(countries[number])
+                            .clipShape(.capsule)
+                            .shadow(radius: 5)
+                            .opacity(
+                                countriesList[countries[number]] ?? true ? 1: 0.25)
+                            .scaleEffect(
+                                countriesList[countries[number]] ?? true ? 1: 0.5)
+                            .animation(.bouncy)
+                            .rotation3DEffect(
+                                .degrees(flagMovement)
+                                ,axis: (x: 0, y: 1, z: 0)
+                            )
+                        
+                    }
+                        
+                        
+                        
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -57,9 +81,12 @@ struct FlagGameTwoView: View {
                     .foregroundStyle(.white)
                     .font(.title.bold())
                 Spacer()
-               
+                
             }
             .padding()
+            .onAppear {
+                setShuffledCountries()
+            }
         }
         .alert(scoreTitle,isPresented: $isLastQuestion) {
             Button("Reset", action: resetGame)
@@ -74,6 +101,8 @@ struct FlagGameTwoView: View {
     }
     
     func flagTapped(_ number: Int) {
+        
+        setOpacityBasedonSelectedCountry(number)
         questionCount += 1
         
         if number == correctAnswer {
@@ -89,11 +118,16 @@ struct FlagGameTwoView: View {
         } else {
             showingScore = true
         }
+        
+        
     }
     
     func askQuestion() {
         countries.shuffle()
+        countriesList.removeAll()
+        setShuffledCountries()
         correctAnswer = Int.random(in: 0...2)
+        correctFlagOffset = 0.0
     }
     
     
@@ -102,6 +136,25 @@ struct FlagGameTwoView: View {
         isLastQuestion = false
         score = 0
         askQuestion()
+    }
+    
+    func setOpacityBasedonSelectedCountry(_ number: Int) {
+        for (country, value) in countriesList {
+            if country != countries[number] {
+                countriesList[country] = false
+            }
+        }
+    }
+    
+    func setShuffledCountries() {
+        countriesList[countries[0]] = true
+        countriesList[countries[1]] = true
+        countriesList[countries[2]] = true
+    }
+    
+    func offsetAmount(_ number: Int) -> Double {
+        let val = countriesList[countries[number]] ?? true ? 0.0: -100.0
+        return val
     }
 }
 

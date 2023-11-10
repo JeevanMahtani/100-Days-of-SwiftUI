@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OverlayView: View {
-    @State private var animationAmount = 2.0
+    @State private var animationAmount = 0.0
     var body: some View {
         Button("Tap Me") {
             //animationAmount += 1

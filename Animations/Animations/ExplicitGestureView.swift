@@ -21,7 +21,9 @@ struct ExplicitGestureView: View {
                     withAnimation(.bouncy) {
                         dragAmount = .zero }
                 }
-            )
+                    )
+                    .animation(.bouncy, value: dragAmount)
+                
     }
 }
 

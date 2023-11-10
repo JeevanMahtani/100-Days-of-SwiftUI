@@ -22,6 +22,7 @@
 		C2DE0A1E2AFC76D900CFE988 /* TextAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE0A1D2AFC76D900CFE988 /* TextAnimationView.swift */; };
 		C2DE0A202AFC7AF300CFE988 /* AnimationViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE0A1F2AFC7AF300CFE988 /* AnimationViewsView.swift */; };
 		C2DE0A222AFC7C2000CFE988 /* CustomTransitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE0A212AFC7C2000CFE988 /* CustomTransitionsView.swift */; };
+		C2DE0C5E2AFCB77100CFE988 /* ExperimentGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE0C5D2AFCB77100CFE988 /* ExperimentGestureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		C2DE0A1D2AFC76D900CFE988 /* TextAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimationView.swift; sourceTree = "<group>"; };
 		C2DE0A1F2AFC7AF300CFE988 /* AnimationViewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewsView.swift; sourceTree = "<group>"; };
 		C2DE0A212AFC7C2000CFE988 /* CustomTransitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionsView.swift; sourceTree = "<group>"; };
+		C2DE0C5D2AFCB77100CFE988 /* ExperimentGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentGestureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				C2DE0A1D2AFC76D900CFE988 /* TextAnimationView.swift */,
 				C2DE0A1F2AFC7AF300CFE988 /* AnimationViewsView.swift */,
 				C2DE0A212AFC7C2000CFE988 /* CustomTransitionsView.swift */,
+				C2DE0C5D2AFCB77100CFE988 /* ExperimentGestureView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				C2DE0A022AFB4F3100CFE988 /* ContentView.swift in Sources */,
 				C2DE0A142AFB843B00CFE988 /* AnimationBindingView.swift in Sources */,
 				C2DE0A202AFC7AF300CFE988 /* AnimationViewsView.swift in Sources */,
+				C2DE0C5E2AFCB77100CFE988 /* ExperimentGestureView.swift in Sources */,
 				C2DE0A222AFC7C2000CFE988 /* CustomTransitionsView.swift in Sources */,
 				C2DE0A1A2AFC73AB00CFE988 /* GestureView.swift in Sources */,
 				C2DE0A102AFB7EEC00CFE988 /* CustomizeAnimationView.swift in Sources */,
