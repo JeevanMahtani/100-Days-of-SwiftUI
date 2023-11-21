@@ -11,6 +11,7 @@
 		C2107DB02AECC34B003ED623 /* FlagGameTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2107DAF2AECC34B003ED623 /* FlagGameTwoView.swift */; };
 		C2107DB22AECC89A003ED623 /* FlagGameThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2107DB12AECC89A003ED623 /* FlagGameThreeView.swift */; };
 		C28D20D42AEE95910049C56E /* PracticeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D20D32AEE95900049C56E /* PracticeUIView.swift */; };
+		C2DE0C602AFE230C00CFE988 /* RoyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE0C5F2AFE230C00CFE988 /* RoyView.swift */; };
 		C2E5B7A12AEB5EFC00555556 /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5B7A02AEB5EFC00555556 /* GuessTheFlagApp.swift */; };
 		C2E5B7A32AEB5EFC00555556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E5B7A22AEB5EFC00555556 /* ContentView.swift */; };
 		C2E5B7A52AEB5EFE00555556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E5B7A42AEB5EFE00555556 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		C2107DAF2AECC34B003ED623 /* FlagGameTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGameTwoView.swift; sourceTree = "<group>"; };
 		C2107DB12AECC89A003ED623 /* FlagGameThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGameThreeView.swift; sourceTree = "<group>"; };
 		C28D20D32AEE95900049C56E /* PracticeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeUIView.swift; sourceTree = "<group>"; };
+		C2DE0C5F2AFE230C00CFE988 /* RoyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoyView.swift; sourceTree = "<group>"; };
 		C2E5B79D2AEB5EFC00555556 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E5B7A02AEB5EFC00555556 /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
 		C2E5B7A22AEB5EFC00555556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C2107DAF2AECC34B003ED623 /* FlagGameTwoView.swift */,
 				C2107DB12AECC89A003ED623 /* FlagGameThreeView.swift */,
 				C28D20D32AEE95900049C56E /* PracticeUIView.swift */,
+				C2DE0C5F2AFE230C00CFE988 /* RoyView.swift */,
 			);
 			path = GuessTheFlag;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				C28D20D42AEE95910049C56E /* PracticeUIView.swift in Sources */,
 				C2E5B7BB2AEB7BB000555556 /* ButtonView.swift in Sources */,
 				C2107DB02AECC34B003ED623 /* FlagGameTwoView.swift in Sources */,
+				C2DE0C602AFE230C00CFE988 /* RoyView.swift in Sources */,
 				C2E5B7C62AEB8BF700555556 /* ButtonCustomImageView.swift in Sources */,
 				C2E5B7BD2AEB7DC900555556 /* CustomButtonView.swift in Sources */,
 				C2E5B7A12AEB5EFC00555556 /* GuessTheFlagApp.swift in Sources */,

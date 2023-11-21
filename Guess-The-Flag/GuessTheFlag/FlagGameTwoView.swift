@@ -77,7 +77,7 @@ struct FlagGameTwoView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: \(score)")
+                Text("Score: \(score) / 8")
                     .foregroundStyle(.white)
                     .font(.title.bold())
                 Spacer()
