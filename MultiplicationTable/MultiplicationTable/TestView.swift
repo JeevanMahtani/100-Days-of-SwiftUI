@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TestView: View {
     
     @State private var numOfQuestions = 5
     @State private var numberMultiplication = 1
@@ -42,7 +42,7 @@ struct ContentView: View {
                     generateQuestions()
                 }
             }
-            .transition(.move(edge: .top))
+            .transition(.move(edge: .trailing))
             .animation(.easeInOut)
             
         } else {
@@ -118,7 +118,7 @@ struct ContentView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.primary)
+            .background(.black)
             .transition(.move(edge: .bottom))
                 .animation(.easeInOut)
             .alert(alertTitle,isPresented: $resultAlert) {
@@ -205,5 +205,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TestView()
 }
