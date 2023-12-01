@@ -9,9 +9,10 @@ import SwiftUI
 
 struct NavView: View {
     var screen: Screen
+    var action : () -> Void
     var body: some View {
-        NavigationLink(destination: screen.view) {
-            Button(screen.label) {}
+        Button(screen.label, action: action) 
+             
                 .font(.title2).bold()
                 .frame(width: 100,height: 120)
                 .padding(.horizontal, 20)
@@ -19,12 +20,11 @@ struct NavView: View {
                 .foregroundColor(.white)
                 .background(.black) 
                 .contentShape(Rectangle())
-        }    
     }
 }
 
 #Preview {
-    NavView(screen: Screen.test)
+    NavView(screen: Screen.test, action: {} )
 }
 
 enum Screen {

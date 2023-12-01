@@ -12,9 +12,9 @@ struct MultiplicationHomeView: View {
     @State private var greenbackgroundOpacity: Double = 1.0
     @State private var bluebackgroundOpacity: Double = 1.0
     @State private var redbackgroundOpacity: Double = 1.0
+    @State private var showingTestSettings = false
     
     var body: some View {
-        NavigationView {
             VStack {
                 VStack(spacing: 40) {
                     
@@ -31,10 +31,24 @@ struct MultiplicationHomeView: View {
                     VStack(spacing: 5) {
                         //  MenuButtonRowView(title1: "Learn", title2: "Practice")
                         
-                        NavRowView(screen1: .test, screen2: .test)
-                        
-                        MenuButtonRowView(title1: "Test", title2: "Score")
-                    }
+                        Button(action: {
+                            showingTestSettings = true
+                        }) {
+                            Text("Test")
+                                .font(.title).bold()
+                                .frame(width: 200, height: 80)
+                                .padding(.horizontal, 20)
+                                .background(Color.black)
+                                .foregroundColor(.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 5)
+                        }
+                        .sheet(isPresented: $showingTestSettings) {
+                            TestView()
+                                .transition(.move(edge: .bottom))
+                            
+                        }                        
+                    }                    
                 }
                 
                 Spacer()
@@ -102,7 +116,8 @@ struct MultiplicationHomeView: View {
             }
             .frame(maxWidth: .infinity)
             .background(.white)
-        }
+
+        
     }
 }
 #Preview {

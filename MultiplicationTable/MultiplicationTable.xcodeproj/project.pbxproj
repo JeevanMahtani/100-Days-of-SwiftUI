@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C267C0CC2B18755F00DBEA1C /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C267C0CB2B18755F00DBEA1C /* TransitionView.swift */; };
 		C2C0472A2B0C5B8F00102D08 /* MultiplicationTableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C047292B0C5B8F00102D08 /* MultiplicationTableApp.swift */; };
 		C2C0472C2B0C5B8F00102D08 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C0472B2B0C5B8F00102D08 /* TestView.swift */; };
 		C2C0472E2B0C5B9100102D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C0472D2B0C5B9100102D08 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C267C0CB2B18755F00DBEA1C /* TransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
 		C2C047262B0C5B8F00102D08 /* MultiplicationTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C047292B0C5B8F00102D08 /* MultiplicationTableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTableApp.swift; sourceTree = "<group>"; };
 		C2C0472B2B0C5B8F00102D08 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -64,15 +66,16 @@
 			isa = PBXGroup;
 			children = (
 				C2C047292B0C5B8F00102D08 /* MultiplicationTableApp.swift */,
-				C2C0472B2B0C5B8F00102D08 /* TestView.swift */,
 				C2C0472D2B0C5B9100102D08 /* Assets.xcassets */,
 				C2C0472F2B0C5B9100102D08 /* Preview Content */,
 				C2C047372B0C5BF200102D08 /* Question.swift */,
 				C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */,
 				C2D2B6172B1031A70083E34A /* MenuButtonView.swift */,
+				C2C0472B2B0C5B8F00102D08 /* TestView.swift */,
 				C2D2B6192B1032B80083E34A /* MenuButtonRowView.swift */,
 				C2D2B61B2B1047240083E34A /* NavView.swift */,
 				C2D2B61D2B104AAD0083E34A /* NavRowView.swift */,
+				C267C0CB2B18755F00DBEA1C /* TransitionView.swift */,
 			);
 			path = MultiplicationTable;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				C2C0472C2B0C5B8F00102D08 /* TestView.swift in Sources */,
 				C2D2B61E2B104AAD0083E34A /* NavRowView.swift in Sources */,
 				C2D2B6182B1031A70083E34A /* MenuButtonView.swift in Sources */,
+				C267C0CC2B18755F00DBEA1C /* TransitionView.swift in Sources */,
 				C2D2B61A2B1032B80083E34A /* MenuButtonRowView.swift in Sources */,
 				C2C0472A2B0C5B8F00102D08 /* MultiplicationTableApp.swift in Sources */,
 				C2D2B61C2B1047240083E34A /* NavView.swift in Sources */,

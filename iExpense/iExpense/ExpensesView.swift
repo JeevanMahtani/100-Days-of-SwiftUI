@@ -46,7 +46,7 @@ struct ExpensesView: View {
                         .onDelete(perform: { indexSet in
                             removeItems(at: indexSet,.personal)
                         })
-
+                        
                     }
                     
                     Section("Business Expenses") {
@@ -90,7 +90,7 @@ struct ExpensesView: View {
         let selectedExpenses = type == .business ? businessExpenses: personalExpenses
         for offset in offsets {
             if let index = expenses.items.firstIndex(where: {$0.id == selectedExpenses[offset].id}) {
-              expenses.items.remove(at: index)
+                expenses.items.remove(at: index)
             }
         }
     }
