@@ -8,52 +8,41 @@
 import SwiftUI
 
 struct MoonshotView: View {
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+    @State private var isListView = false
     
+    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
     let columns = [GridItem(.adaptive(minimum: 150))]
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyVGrid(columns: columns) {
-                    ForEach(missions) { mission in
-                        NavigationLink {
-                            MissionView(mission: mission, astronauts: astronauts)
-                        } label: {
-                            VStack {
-                                Image(mission.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height : 100)
-                                    .padding()
-                                
-                                VStack {
-                                    Text(mission.displayName)
-                                        .font(.headline)
-                                        .foregroundStyle(.white)
-                                    
-                                    Text(mission.formattedDate)
-                                        .font(.caption)
-                                        .foregroundStyle(.gray)
-                                }
-                                .padding(.vertical)
-                                .frame(maxWidth: .infinity)
-                                .background(.lightBackground)
-                            }
-                            .clipShape(.rect(cornerRadius: 10))
-                            .overlay(RoundedRectangle(cornerRadius:  10)
-                                .stroke(.lightBackground)
-                            )
-                        }  
-                    }
+            Group {
+                if isListView {
+                    MoonshotListView(astronauts: astronauts, missions: missions)
+                        .transition(.slide)
+                } else {
+                    MoonshotGridView(astronauts: astronauts, missions: missions)
                 }
-                .padding([.horizontal, .bottom])
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
-            
+            .toolbar {
+                Button(action: {
+                    withAnimation {
+                        isListView.toggle()
+                    }
+                    
+                }) {
+                    Text("Switch view")
+                        .font(.title2).bold()
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding(.trailing, 5)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 5)
+                }
+            }
         }
+        .transition(.slide)
     }
 }
 

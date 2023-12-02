@@ -26,9 +26,16 @@ struct MissionView: View {
                         width, axis in width * 0.6
                     }
                 
-
                 VStack(alignment: .leading) {
-                    Rectangle()
+                    Text("Launch date: \(mission.formattedDate)")
+                        .font(.title2).bold()
+                }
+                .padding(.top)
+                
+                VStack(alignment: .leading) {
+                    
+                    DividerView()
+                    
                         .frame(height: 2)
                         .foregroundStyle(.lightBackground)
                         .padding(.vertical)
@@ -39,17 +46,15 @@ struct MissionView: View {
                     
                     Text(mission.description)
                     
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    DividerView()
                     
                     Text("Crew")
                         .font(.title.bold())
                         .padding(.bottom, 5)
                 }
                 .padding(.horizontal)
-                
+                CrewView(crew: crew)
+               /* 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(crew, id: \.role) { crewMember in
@@ -76,7 +81,7 @@ struct MissionView: View {
                             }
                         }
                     }
-                }
+                }*/
             }
             .padding(.bottom)
         }
@@ -102,6 +107,6 @@ struct MissionView: View {
 #Preview {
     let missions: [Mission] = Bundle.main.decode("missions.json")
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    return MissionView(mission: missions[0], astronauts: astronauts)
+    return MissionView(mission: missions[1], astronauts: astronauts)
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

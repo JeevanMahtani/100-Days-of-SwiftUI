@@ -26,6 +26,10 @@
 		C2D2B67A2B1574D80083E34A /* MoonshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B6792B1574D80083E34A /* MoonshotView.swift */; };
 		C2D2B67C2B1575F50083E34A /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B67B2B1575F50083E34A /* Mission.swift */; };
 		C2D2B67E2B1583F80083E34A /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B67D2B1583F80083E34A /* Color-Theme.swift */; };
+		C2F8B7FC2B19D9740073A9C7 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B7FB2B19D9740073A9C7 /* CrewView.swift */; };
+		C2F8B7FE2B19DB420073A9C7 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B7FD2B19DB420073A9C7 /* DividerView.swift */; };
+		C2F8B8002B19DE200073A9C7 /* MoonshotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B7FF2B19DE200073A9C7 /* MoonshotListView.swift */; };
+		C2F8B8022B1ABB4C0073A9C7 /* MoonshotGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B8012B1ABB4C0073A9C7 /* MoonshotGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		C2D2B6792B1574D80083E34A /* MoonshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotView.swift; sourceTree = "<group>"; };
 		C2D2B67B2B1575F50083E34A /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		C2D2B67D2B1583F80083E34A /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		C2F8B7FB2B19D9740073A9C7 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
+		C2F8B7FD2B19DB420073A9C7 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		C2F8B7FF2B19DE200073A9C7 /* MoonshotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotListView.swift; sourceTree = "<group>"; };
+		C2F8B8012B1ABB4C0073A9C7 /* MoonshotGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		C2D2B6562B1489840083E34A /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				C2F8B7FD2B19DB420073A9C7 /* DividerView.swift */,
 				C2D2B66F2B1570E70083E34A /* astronauts.json */,
 				C2D2B6732B1571860083E34A /* Astronaut.swift */,
 				C2D2B6752B15728F0083E34A /* Bundle-Decodable.swift */,
@@ -95,11 +104,14 @@
 				C2D2B6692B1494030083E34A /* ListNavigationView.swift */,
 				C2D2B66B2B1494FB0083E34A /* CodableHierarchyView.swift */,
 				C2D2B66D2B14998A0083E34A /* GridScrollView.swift */,
-				C2D2B6792B1574D80083E34A /* MoonshotView.swift */,
 				C2D2B67D2B1583F80083E34A /* Color-Theme.swift */,
 				C2C5A3A42B171FA60027A014 /* MissionView.swift */,
 				C267C0C72B18426000DBEA1C /* ModifierView.swift */,
 				C267C0C92B18470900DBEA1C /* AstronautView.swift */,
+				C2F8B7FB2B19D9740073A9C7 /* CrewView.swift */,
+				C2D2B6792B1574D80083E34A /* MoonshotView.swift */,
+				C2F8B7FF2B19DE200073A9C7 /* MoonshotListView.swift */,
+				C2F8B8012B1ABB4C0073A9C7 /* MoonshotGridView.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -189,12 +201,16 @@
 				C2D2B67A2B1574D80083E34A /* MoonshotView.swift in Sources */,
 				C2D2B6682B14925A0083E34A /* ExampleNavigationView.swift in Sources */,
 				C267C0CA2B18470900DBEA1C /* AstronautView.swift in Sources */,
+				C2F8B7FC2B19D9740073A9C7 /* CrewView.swift in Sources */,
 				C2D2B66E2B14998A0083E34A /* GridScrollView.swift in Sources */,
 				C2D2B6742B1571860083E34A /* Astronaut.swift in Sources */,
 				C2D2B66A2B1494030083E34A /* ListNavigationView.swift in Sources */,
 				C2C5A3A52B171FA60027A014 /* MissionView.swift in Sources */,
+				C2F8B7FE2B19DB420073A9C7 /* DividerView.swift in Sources */,
 				C2D2B67E2B1583F80083E34A /* Color-Theme.swift in Sources */,
 				C2D2B6762B15728F0083E34A /* Bundle-Decodable.swift in Sources */,
+				C2F8B8022B1ABB4C0073A9C7 /* MoonshotGridView.swift in Sources */,
+				C2F8B8002B19DE200073A9C7 /* MoonshotListView.swift in Sources */,
 				C2D2B66C2B1494FB0083E34A /* CodableHierarchyView.swift in Sources */,
 				C2D2B6582B1489840083E34A /* MoonshotApp.swift in Sources */,
 				C2D2B6662B148DFF0083E34A /* ScrollViewExampleView.swift in Sources */,
