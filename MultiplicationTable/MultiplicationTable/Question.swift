@@ -23,6 +23,7 @@ class Questions {
     var numberOfQuestions: Int = 0
     var alertTitle: String = ""
     var alertMessage: String = ""
+
     
     init() {        
     }
@@ -57,7 +58,9 @@ class Questions {
           alertMessage = ""
       }
     
-    func endGame() {
+    func endGame(scoreResult: Scores) {
+        //scoreResult.scores.append(Score(correct: score, total: numberOfQuestions))
+        scoreResult.scores.insert(Score(correct: score, total: numberOfQuestions), at: 0)
         questionNumber = 1
         score = 0
     }

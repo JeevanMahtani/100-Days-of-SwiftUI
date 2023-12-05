@@ -24,6 +24,8 @@ struct TestView: View {
     @State private var gameOverAlert =  false
     @State private var newGameAlert = false
     
+    var scores = Scores()
+    
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -161,7 +163,7 @@ struct TestView: View {
                 }
                 .alert(questionLibrary.alertTitle,isPresented: $gameOverAlert) {
                     Button("Back to main menu") {
-                        questionLibrary.endGame()
+                        questionLibrary.endGame(scoreResult: scores)
                         isNotActive.toggle()
                     }
                 } message: {
@@ -169,7 +171,7 @@ struct TestView: View {
                 }
                 .alert(isPresented: $newGameAlert) {
                     Alert(title: Text(questionLibrary.alertTitle), message: Text(questionLibrary.alertMessage),primaryButton: .default(Text("confirm")) {
-                        questionLibrary.endGame()
+                        questionLibrary.endGame(scoreResult: scores)
                         isNotActive.toggle()
                     }, secondaryButton: .cancel())
                 }
