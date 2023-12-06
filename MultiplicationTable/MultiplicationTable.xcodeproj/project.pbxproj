@@ -17,10 +17,7 @@
 		C2C047312B0C5B9100102D08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C047302B0C5B9100102D08 /* Preview Assets.xcassets */; };
 		C2C047382B0C5BF200102D08 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C047372B0C5BF200102D08 /* Question.swift */; };
 		C2D2B6162B0F2F220083E34A /* MultiplicationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */; };
-		C2D2B6182B1031A70083E34A /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B6172B1031A70083E34A /* MenuButtonView.swift */; };
-		C2D2B61A2B1032B80083E34A /* MenuButtonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B6192B1032B80083E34A /* MenuButtonRowView.swift */; };
-		C2D2B61C2B1047240083E34A /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B61B2B1047240083E34A /* NavView.swift */; };
-		C2D2B61E2B104AAD0083E34A /* NavRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B61D2B104AAD0083E34A /* NavRowView.swift */; };
+		C2E13A5F2B1F0DA60005770C /* DummyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A5E2B1F0DA60005770C /* DummyList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +32,7 @@
 		C2C047302B0C5B9100102D08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2C047372B0C5BF200102D08 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationHomeView.swift; sourceTree = "<group>"; };
-		C2D2B6172B1031A70083E34A /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
-		C2D2B6192B1032B80083E34A /* MenuButtonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonRowView.swift; sourceTree = "<group>"; };
-		C2D2B61B2B1047240083E34A /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
-		C2D2B61D2B104AAD0083E34A /* NavRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRowView.swift; sourceTree = "<group>"; };
+		C2E13A5E2B1F0DA60005770C /* DummyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +49,7 @@
 		C2C0471D2B0C5B8F00102D08 = {
 			isa = PBXGroup;
 			children = (
+				C2E13A5E2B1F0DA60005770C /* DummyList.swift */,
 				C2C047282B0C5B8F00102D08 /* MultiplicationTable */,
 				C2C047272B0C5B8F00102D08 /* Products */,
 			);
@@ -77,11 +72,7 @@
 				C2C0472F2B0C5B9100102D08 /* Preview Content */,
 				C2C047372B0C5BF200102D08 /* Question.swift */,
 				C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */,
-				C2D2B6172B1031A70083E34A /* MenuButtonView.swift */,
 				C2C0472B2B0C5B8F00102D08 /* TestView.swift */,
-				C2D2B6192B1032B80083E34A /* MenuButtonRowView.swift */,
-				C2D2B61B2B1047240083E34A /* NavView.swift */,
-				C2D2B61D2B104AAD0083E34A /* NavRowView.swift */,
 				C267C0CB2B18755F00DBEA1C /* TransitionView.swift */,
 				C25FBE4C2B1DB19200983FBF /* ScoreView.swift */,
 				C25FBE502B1DB7C100983FBF /* EmptyScoreView.swift */,
@@ -171,12 +162,9 @@
 				C25FBE512B1DB7C100983FBF /* EmptyScoreView.swift in Sources */,
 				C2D2B6162B0F2F220083E34A /* MultiplicationHomeView.swift in Sources */,
 				C2C0472C2B0C5B8F00102D08 /* TestView.swift in Sources */,
-				C2D2B61E2B104AAD0083E34A /* NavRowView.swift in Sources */,
-				C2D2B6182B1031A70083E34A /* MenuButtonView.swift in Sources */,
+				C2E13A5F2B1F0DA60005770C /* DummyList.swift in Sources */,
 				C267C0CC2B18755F00DBEA1C /* TransitionView.swift in Sources */,
-				C2D2B61A2B1032B80083E34A /* MenuButtonRowView.swift in Sources */,
 				C2C0472A2B0C5B8F00102D08 /* MultiplicationTableApp.swift in Sources */,
-				C2D2B61C2B1047240083E34A /* NavView.swift in Sources */,
 				C25FBE4F2B1DB22A00983FBF /* Score.swift in Sources */,
 				C25FBE4D2B1DB19200983FBF /* ScoreView.swift in Sources */,
 			);

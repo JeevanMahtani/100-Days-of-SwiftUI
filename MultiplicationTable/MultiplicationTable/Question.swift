@@ -59,8 +59,8 @@ class Questions {
       }
     
     func endGame(scoreResult: Scores) {
-        //scoreResult.scores.append(Score(correct: score, total: numberOfQuestions))
-        scoreResult.scores.insert(Score(correct: score, total: numberOfQuestions), at: 0)
+        
+        scoreResult.scores.insert(Score(correct: score, total: numberOfQuestions, date: scoreResult.currentDateTime()), at: 0)
         questionNumber = 1
         score = 0
     }
@@ -104,5 +104,14 @@ class Questions {
             alertTitle = "Oops!"
             alertMessage = "That was incorrect. Correct answer is \(correctAnswer)"
         }
+    }
+    
+    private func currentDateTime() -> String {
+        let currentDate = Date()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yy HH:mm"
+        
+        return formatter.string(from: currentDate)
     }
 }
