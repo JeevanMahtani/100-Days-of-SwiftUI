@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct Mission: Codable, Identifiable {
+struct Mission: Hashable, Codable, Identifiable, Equatable {
     
-    struct CrewRole: Codable {
+    static func == (lhs: Mission, rhs: Mission) -> Bool {
+        // Compare the relevant properties to determine equality
+        return lhs.id == rhs.id
+            && lhs.launchDate == rhs.launchDate
+            && lhs.crew == rhs.crew
+            && lhs.description == rhs.description
+    }
+    
+    struct CrewRole: Codable, Equatable, Hashable {
         let name: String
         let role: String
     }
@@ -30,4 +38,5 @@ struct Mission: Codable, Identifiable {
     var formattedDate: String {
         launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
     }
+
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2CD45792B22B595003BAFF0 /* ExpensesNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD45782B22B595003BAFF0 /* ExpensesNavigationView.swift */; };
+		C2CD457B2B22B9C5003BAFF0 /* AddViewChalllengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD457A2B22B9C5003BAFF0 /* AddViewChalllengeView.swift */; };
 		C2D2B62C2B1071360083E34A /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B62B2B1071360083E34A /* iExpenseApp.swift */; };
 		C2D2B62E2B1071360083E34A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B62D2B1071360083E34A /* ContentView.swift */; };
 		C2D2B6302B1071380083E34A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D2B62F2B1071380083E34A /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2CD45782B22B595003BAFF0 /* ExpensesNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesNavigationView.swift; sourceTree = "<group>"; };
+		C2CD457A2B22B9C5003BAFF0 /* AddViewChalllengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewChalllengeView.swift; sourceTree = "<group>"; };
 		C2D2B6282B1071360083E34A /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D2B62B2B1071360083E34A /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
 		C2D2B62D2B1071360083E34A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				C2D2B6452B11BC560083E34A /* ExpensesView.swift */,
 				C2D2B6492B11C2270083E34A /* AddView.swift */,
 				C2D2B6472B11BC9F0083E34A /* Expense.swift */,
+				C2CD45782B22B595003BAFF0 /* ExpensesNavigationView.swift */,
+				C2CD457A2B22B9C5003BAFF0 /* AddViewChalllengeView.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
@@ -167,12 +173,14 @@
 				C2D2B63C2B107DF90083E34A /* DeleteItemsView.swift in Sources */,
 				C2D2B63E2B1080890083E34A /* DeleteMultipleItemsView.swift in Sources */,
 				C2D2B62E2B1071360083E34A /* ContentView.swift in Sources */,
+				C2CD457B2B22B9C5003BAFF0 /* AddViewChalllengeView.swift in Sources */,
 				C2D2B6402B1081DB0083E34A /* UserDefaultView.swift in Sources */,
 				C2D2B6442B10855D0083E34A /* ArchiveSwiftObjectsView.swift in Sources */,
 				C2D2B63A2B107AB10083E34A /* SheetView.swift in Sources */,
 				C2D2B64A2B11C2270083E34A /* AddView.swift in Sources */,
 				C2D2B62C2B1071360083E34A /* iExpenseApp.swift in Sources */,
 				C2D2B6482B11BC9F0083E34A /* Expense.swift in Sources */,
+				C2CD45792B22B595003BAFF0 /* ExpensesNavigationView.swift in Sources */,
 				C2D2B6462B11BC560083E34A /* ExpensesView.swift in Sources */,
 				C2D2B6422B1084770083E34A /* AppStorageView.swift in Sources */,
 			);

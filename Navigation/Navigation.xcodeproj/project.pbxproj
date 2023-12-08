@@ -14,6 +14,9 @@
 		C27C160C2B1EAF0F004D729A /* ComplexRootViewNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C160B2B1EAF0F004D729A /* ComplexRootViewNavigationView.swift */; };
 		C27C160E2B1EB041004D729A /* SaveNavigationPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C160D2B1EB041004D729A /* SaveNavigationPathView.swift */; };
 		C27C16102B1EB1F4004D729A /* ComplexSaveNavigationPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C160F2B1EB1F4004D729A /* ComplexSaveNavigationPathView.swift */; };
+		C2E13A632B2180A80005770C /* NavigationBarCustomizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A622B2180A80005770C /* NavigationBarCustomizeView.swift */; };
+		C2E13A652B2182A90005770C /* ToolbarCustomizeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A642B2182A90005770C /* ToolbarCustomizeButtonView.swift */; };
+		C2E13A672B2185300005770C /* EditNavBarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A662B2185300005770C /* EditNavBarTitleView.swift */; };
 		C2F8B8102B1C6D190073A9C7 /* NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B80F2B1C6D190073A9C7 /* NavigationApp.swift */; };
 		C2F8B8122B1C6D190073A9C7 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8B8112B1C6D190073A9C7 /* NavigationLinkView.swift */; };
 		C2F8B8142B1C6D1B0073A9C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F8B8132B1C6D1B0073A9C7 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		C27C160B2B1EAF0F004D729A /* ComplexRootViewNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexRootViewNavigationView.swift; sourceTree = "<group>"; };
 		C27C160D2B1EB041004D729A /* SaveNavigationPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNavigationPathView.swift; sourceTree = "<group>"; };
 		C27C160F2B1EB1F4004D729A /* ComplexSaveNavigationPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexSaveNavigationPathView.swift; sourceTree = "<group>"; };
+		C2E13A622B2180A80005770C /* NavigationBarCustomizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustomizeView.swift; sourceTree = "<group>"; };
+		C2E13A642B2182A90005770C /* ToolbarCustomizeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarCustomizeButtonView.swift; sourceTree = "<group>"; };
+		C2E13A662B2185300005770C /* EditNavBarTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNavBarTitleView.swift; sourceTree = "<group>"; };
 		C2F8B80C2B1C6D190073A9C7 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F8B80F2B1C6D190073A9C7 /* NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationApp.swift; sourceTree = "<group>"; };
 		C2F8B8112B1C6D190073A9C7 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				C27C160B2B1EAF0F004D729A /* ComplexRootViewNavigationView.swift */,
 				C27C160D2B1EB041004D729A /* SaveNavigationPathView.swift */,
 				C27C160F2B1EB1F4004D729A /* ComplexSaveNavigationPathView.swift */,
+				C2E13A622B2180A80005770C /* NavigationBarCustomizeView.swift */,
+				C2E13A642B2182A90005770C /* ToolbarCustomizeButtonView.swift */,
+				C2E13A662B2185300005770C /* EditNavBarTitleView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -158,13 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E13A632B2180A80005770C /* NavigationBarCustomizeView.swift in Sources */,
 				C27C160C2B1EAF0F004D729A /* ComplexRootViewNavigationView.swift in Sources */,
 				C25FBE572B1EAB1E00983FBF /* ComplexDataNavigationView.swift in Sources */,
 				C25FBE592B1EACA300983FBF /* RootViewNavigationView.swift in Sources */,
 				C2F8B8122B1C6D190073A9C7 /* NavigationLinkView.swift in Sources */,
+				C2E13A652B2182A90005770C /* ToolbarCustomizeButtonView.swift in Sources */,
 				C25FBE532B1EA74C00983FBF /* ProgrammaticNavigationView.swift in Sources */,
 				C25FBE552B1EA95B00983FBF /* SimpleDataTypeNavigationView.swift in Sources */,
 				C27C160E2B1EB041004D729A /* SaveNavigationPathView.swift in Sources */,
+				C2E13A672B2185300005770C /* EditNavBarTitleView.swift in Sources */,
 				C2F8B8102B1C6D190073A9C7 /* NavigationApp.swift in Sources */,
 				C27C16102B1EB1F4004D729A /* ComplexSaveNavigationPathView.swift in Sources */,
 			);

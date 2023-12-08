@@ -1,14 +1,14 @@
 //
-//  AddView.swift
+//  AddViewChalllengeView.swift
 //  iExpense
 //
-//  Created by Jeevan Mahtani on 25/11/23.
+//  Created by Jeevan Mahtani on 8/12/23.
 //
 
 import SwiftUI
 
-struct AddView: View {
-    @State private var name = ""
+struct AddViewChalllengeView: View {
+    @State private var name = "New Expense"
     @State private var type = "Personal"
     @State private var amount = 0.0
     
@@ -20,9 +20,7 @@ struct AddView: View {
     
     var body: some View {
         NavigationStack {
-            Form {
-                TextField("Name", text: $name)
-                
+            Form {      
                 Picker("Type", selection: $type) {
                     ForEach(types, id: \.self) {
                         Text($0)
@@ -34,7 +32,8 @@ struct AddView: View {
                 
                 
             }
-            .navigationTitle("Add new expense")
+            .navigationTitle($name)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
@@ -57,5 +56,5 @@ struct AddView: View {
 }
 
 #Preview {
-    AddView(expenses: Expenses())
+    AddViewChalllengeView(expenses: Expenses())
 }
