@@ -36,7 +36,6 @@ struct MultiplicationHomeView: View {
                     
                     VStack(spacing: 10) {
                         Button(action: {
-                            print(testDisplayed)
                             showingTestSettings = true
                         }) {
                             Text("Test")

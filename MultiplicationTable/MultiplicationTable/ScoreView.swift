@@ -14,35 +14,7 @@ struct ScoreView: View {
             if scoreObject.scores.isEmpty {
                 EmptyScoreView()
             } else {
-                Form {
-                    List {
-                        ForEach(scoreObject.scores) { score in
-                            VStack(alignment: .leading, spacing: 10) {
-                                Text("\(score.correct) out of \(score.total)")
-                                    .font(.title2)
-                                    .bold()
-                                
-                                if let date = score.date {
-                                    Text(date)
-                                        .padding(.bottom, 10)
-                                } else {
-                                    Text("N/A")
-                                        .padding(.bottom, 10)
-                                }
-                            }
-                            .padding(.top)
-                            .listRowBackground(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color.clear) 
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .stroke(Color.blue, lineWidth: 12))
-                            )
-                        }
-                        .onDelete(perform: scoreObject.removeScore)
-                    }
-                }
-                .navigationTitle("Scores")
+                PopulatedScoreView(scoreObject: scoreObject)
             }
         }
     }      
