@@ -18,6 +18,7 @@
 		C2C047382B0C5BF200102D08 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C047372B0C5BF200102D08 /* Question.swift */; };
 		C2CD457D2B231595003BAFF0 /* PopulatedScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD457C2B231595003BAFF0 /* PopulatedScoreView.swift */; };
 		C2D2B6162B0F2F220083E34A /* MultiplicationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */; };
+		C2D555762B293F020008AFAC /* IncrementCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D555752B293F020008AFAC /* IncrementCountView.swift */; };
 		C2E13A5F2B1F0DA60005770C /* DummyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A5E2B1F0DA60005770C /* DummyList.swift */; };
 		C2E13A612B202FE80005770C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E13A602B202FE80005770C /* TestView.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		C2C047372B0C5BF200102D08 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C2CD457C2B231595003BAFF0 /* PopulatedScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulatedScoreView.swift; sourceTree = "<group>"; };
 		C2D2B6152B0F2F220083E34A /* MultiplicationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationHomeView.swift; sourceTree = "<group>"; };
+		C2D555752B293F020008AFAC /* IncrementCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementCountView.swift; sourceTree = "<group>"; };
 		C2E13A5E2B1F0DA60005770C /* DummyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyList.swift; sourceTree = "<group>"; };
 		C2E13A602B202FE80005770C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				C2CD457C2B231595003BAFF0 /* PopulatedScoreView.swift */,
 				C2E13A602B202FE80005770C /* TestView.swift */,
 				C267C0CB2B18755F00DBEA1C /* TransitionView.swift */,
+				C2D555752B293F020008AFAC /* IncrementCountView.swift */,
 			);
 			path = MultiplicationTable;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D555762B293F020008AFAC /* IncrementCountView.swift in Sources */,
 				C2C047382B0C5BF200102D08 /* Question.swift in Sources */,
 				C2CD457D2B231595003BAFF0 /* PopulatedScoreView.swift in Sources */,
 				C25FBE512B1DB7C100983FBF /* EmptyScoreView.swift in Sources */,

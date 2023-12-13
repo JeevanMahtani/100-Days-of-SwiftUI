@@ -7,13 +7,18 @@
 
 import SwiftUI
 
+
 struct AddHabitSheet: View {
+    
     @State private var habitName: String = ""
-    @State private var habitType = 0
+    @State private var habitType = "Start"
+    @State private var types = ["Start", "Stop"]
     @State private var habitDescription: String = ""
     @State private var targetDays: Int = 1
     
     @Environment(\.dismiss) var dismiss
+    
+    var habits: Habits
     	
     var body: some View {
         
@@ -27,7 +32,7 @@ struct AddHabitSheet: View {
                         }
                                 
                             Group {
-                                TextField("Example: My aim is to learn how to play a new chord everyday so I can learn all chords of the C Major in 2 weeks and start playing some songs!", text: $habitDescription,  axis: .vertical)
+                                TextField("Example: My aim is to learn how to play a new chord everyday so I can learn all chords of the C Major scale in 2 weeks and start playing some songs!", text: $habitDescription,  axis: .vertical)
                                     .lineLimit(4...4)
                             }
                             
@@ -40,8 +45,9 @@ struct AddHabitSheet: View {
                             
                         }){
                             Picker("Start or stop doing?", selection: $habitType) {
-                                Text("\(HabitType.start.rawValue)").tag(0)
-                                Text("\(HabitType.stop.rawValue)").tag(1)
+                                ForEach(types, id: \.self) {
+                                    Text($0)
+                                }
                             }
                             .pickerStyle(.segmented)
                         }
@@ -62,14 +68,19 @@ struct AddHabitSheet: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.pleasantOrange)
-                .navigationTitle("New Routine")
-                .navigationBarColor(backgroundColor: .clear, titleColor: .white)
                 .navigationBarTitleDisplayMode(.inline)
-                .toolbar {                    
+                .toolbar {     
+                    ToolbarItem(placement: .principal) {
+                        Text("New Routine")
+                            .foregroundStyle(.white)
+                            .bold()
+                    }
+                    
                     ToolbarItem(placement: .confirmationAction) {
                         Button(action: {
+                            let habit = Habit(habitName: habitName, habitDescription: habitDescription, habbitType: habitType, targetDays: targetDays)
+                            habits.habitList.append(habit)
                             dismiss()
-                            //TODO: Save new routine into list of routines
                         }) {
                             Text("Save")
                                 .foregroundStyle(.white)
@@ -93,13 +104,5 @@ struct AddHabitSheet: View {
 }
 
 #Preview {
-    AddHabitSheet()
-}
-
-extension AddHabitSheet {
-    
-    enum HabitType: String {
-        case start = "Start"
-        case stop = "Stop"
-    }
+    AddHabitSheet(habits: Habits())
 }

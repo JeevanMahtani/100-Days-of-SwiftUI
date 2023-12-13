@@ -8,12 +8,11 @@
 import SwiftUI
 
 
-struct HabitListView: View {
-    @Binding var habits: Habits   
+struct ListView: View {
+    @State private var habits = Habits()    
     @State private var isAddingRoutine = false
     
     var body: some View {
-        NavigationStack {
             GeometryReader { geometry in
                 VStack(alignment: .leading,spacing: 20) {
                     VStack { 
@@ -26,7 +25,7 @@ struct HabitListView: View {
                     VStack {
                         List {
                             ForEach(habits.habitList) { habit in
-                                NavigationLink(destination: HabitDetailView(habits: habits, habit: habit)) {
+                                NavigationLink(destination: EmptyView()) {
                                 HStack {
                                     Image(systemName: habit.habitIcon)
                                         .resizable()
@@ -41,7 +40,7 @@ struct HabitListView: View {
                                             .font(.system(size: 18))
                                       } 
                                    }
-                                .frame(height: 75)                              
+                                .frame(height: 75)
                                     
                                 }
                                 .listRowSeparator(.hidden)
@@ -56,7 +55,6 @@ struct HabitListView: View {
                             }
                             .onDelete(perform: habits.removeHabit)
                         }
-                        .environment(\.colorScheme, .light)
                         .frame(width: geometry.size.width * 0.9)
                         .listStyle(.plain)
                        
@@ -70,12 +68,10 @@ struct HabitListView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.pleasantOrange)
                 // .border(.red, width: 5)
-            }
+            }  
             .sheet(isPresented: $isAddingRoutine) {
                 AddHabitSheet(habits: habits)
-                    .preferredColorScheme(.light)
             }
-            .accentColor(.white)
             .toolbar {
                 Button(action: {
                     isAddingRoutine.toggle()
@@ -86,14 +82,12 @@ struct HabitListView: View {
                         .bold()
                 }
             }
-        }
-       
+        
         
     }
 }
 
 #Preview {
-    let habits = Habits()
-    habits.habitList.append(Habit(habitName: "Test Habbit", habitDescription: "This is a test habbit description.", habbitType: "Start", targetDays: 14))
-    return HabitListView(habits: .constant(habits))
+    ListView()
 }
+

@@ -11,6 +11,7 @@ import SwiftUI
 struct NoHabitsView: View {
     
     @State private var isAddingRoutine = false
+    @Binding var habits: Habits
     
     var body: some View {
         VStack(alignment: .leading,spacing: 100) {
@@ -85,10 +86,11 @@ struct NoHabitsView: View {
         .background(Color.pleasantOrange)
         .ignoresSafeArea()
         .sheet(isPresented: $isAddingRoutine) {
-            AddHabitSheet()
+            AddHabitSheet(habits: habits)
                 .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
                 .preferredColorScheme(.light)
+                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: 2)
         }
        // .border(.red, width: 5)
         
@@ -97,5 +99,5 @@ struct NoHabitsView: View {
 }
 
 #Preview {
-    NoHabitsView()
+    NoHabitsView(habits: .constant(Habits()))
 }

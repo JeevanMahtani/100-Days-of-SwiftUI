@@ -15,6 +15,11 @@
 		C2CD459B2B258F4F003BAFF0 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */; };
 		C2CD459D2B25A2CA003BAFF0 /* AddHabitSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD459C2B25A2CA003BAFF0 /* AddHabitSheet.swift */; };
 		C2CD459F2B25BA1F003BAFF0 /* NavigationTitleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD459E2B25BA1F003BAFF0 /* NavigationTitleColor.swift */; };
+		C2CD45A12B26F391003BAFF0 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD45A02B26F391003BAFF0 /* Habits.swift */; };
+		C2CD45A32B26FABE003BAFF0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD45A22B26FABE003BAFF0 /* HomeView.swift */; };
+		C2CD45A72B270977003BAFF0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD45A62B270977003BAFF0 /* ListView.swift */; };
+		C2D555702B285DFE0008AFAC /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */; };
+		C2D555722B289DA20008AFAC /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D555712B289DA20008AFAC /* Divider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		C2CD459C2B25A2CA003BAFF0 /* AddHabitSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitSheet.swift; sourceTree = "<group>"; };
 		C2CD459E2B25BA1F003BAFF0 /* NavigationTitleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleColor.swift; sourceTree = "<group>"; };
+		C2CD45A02B26F391003BAFF0 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		C2CD45A22B26FABE003BAFF0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C2CD45A62B270977003BAFF0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		C2D555712B289DA20008AFAC /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 		C2CD45892B257D4E003BAFF0 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				C2CD45A02B26F391003BAFF0 /* Habits.swift */,
+				C2CD45A62B270977003BAFF0 /* ListView.swift */,
 				C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */,
 				C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */,
 				C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */,
@@ -67,6 +79,9 @@
 				C2CD45982B25828C003BAFF0 /* ColorExtensions.swift */,
 				C2CD459C2B25A2CA003BAFF0 /* AddHabitSheet.swift */,
 				C2CD459E2B25BA1F003BAFF0 /* NavigationTitleColor.swift */,
+				C2CD45A22B26FABE003BAFF0 /* HomeView.swift */,
+				C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */,
+				C2D555712B289DA20008AFAC /* Divider.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -151,10 +166,15 @@
 			files = (
 				C2CD458D2B257D4E003BAFF0 /* NoHabitsView.swift in Sources */,
 				C2CD459D2B25A2CA003BAFF0 /* AddHabitSheet.swift in Sources */,
+				C2CD45A72B270977003BAFF0 /* ListView.swift in Sources */,
 				C2CD459F2B25BA1F003BAFF0 /* NavigationTitleColor.swift in Sources */,
 				C2CD459B2B258F4F003BAFF0 /* HabitListView.swift in Sources */,
 				C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */,
+				C2D555722B289DA20008AFAC /* Divider.swift in Sources */,
+				C2D555702B285DFE0008AFAC /* HabitDetailView.swift in Sources */,
+				C2CD45A32B26FABE003BAFF0 /* HomeView.swift in Sources */,
 				C2CD45992B25828C003BAFF0 /* ColorExtensions.swift in Sources */,
+				C2CD45A12B26F391003BAFF0 /* Habits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
