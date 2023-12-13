@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HabitDetailView: View {
     @State private var targetCompleted = false
+    @State private var isDisabled = false
     
     @Environment(\.presentationMode) var presentation
     
@@ -37,7 +38,7 @@ struct HabitDetailView: View {
                         .font(.system(size: 40))
                         .fontDesign(.rounded)
                         .foregroundStyle(.white)
-                        .bold()                    
+                        .bold()  
                 }
                 .padding(.leading, 10)
                 
@@ -87,9 +88,10 @@ struct HabitDetailView: View {
             }
             VStack {
                 Button(action: {
-                    incrementDaysCompleted(habit: habit, habits: habits)                    
-                    if habit.daysCompleted == habit.targetDays {
-                        targetCompleted = true
+                   let habit = incrementDaysCompleted(habit: habit, habits: habits)
+                    if habit.targetMet {
+                        targetCompleted.toggle()
+                        isDisabled.toggle()
                     }
                 }) {
                     Text("Completed today")
@@ -103,6 +105,8 @@ struct HabitDetailView: View {
                         .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 5)
                         .environment(\.colorScheme, .light)
                 }
+                .disabled(isDisabled)
+                .opacity(isDisabled ? 0.7 : 1.0)
             }
             Spacer()
         }
@@ -133,10 +137,15 @@ struct HabitDetailView: View {
         habit.habbitType == "Start"
     }
     
-    private func incrementDaysCompleted(habit: Habit, habits: Habits) {
+    private func incrementDaysCompleted(habit: Habit, habits: Habits) -> Habit{
+        var updatedHabit: Habit
         if let index =  habits.habitList.firstIndex(where: { $0.habitName == habit.habitName} ) {
             habits.habitList[index].daysCompleted += 1
+            updatedHabit = habits.habitList[index]
+        } else {
+            updatedHabit = habit
         }
+        return updatedHabit
     }
     
 }

@@ -13,6 +13,9 @@ struct IncrementCountView: View {
     var body: some View {
         VStack {
             Text("\(count)")
+                .onAppear {
+                    print("Appeared")
+                }
             Button("Increment") {
                 count += 1
                 if count == 6 {

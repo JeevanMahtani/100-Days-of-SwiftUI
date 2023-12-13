@@ -16,6 +16,9 @@ struct Habit: Identifiable, Codable, Equatable {
     let targetDays: Int
     var daysCompleted: Int = 0
     
+    var targetMet: Bool {
+        daysCompleted == targetDays
+    }
     
     var habitIcon : String {
         habbitType == "Start" ? "checkmark.circle" : "x.circle"
@@ -25,6 +28,8 @@ struct Habit: Identifiable, Codable, Equatable {
         case start = "Start"
         case stop = "Stop"
     }
+    
+
 }
 
 @Observable

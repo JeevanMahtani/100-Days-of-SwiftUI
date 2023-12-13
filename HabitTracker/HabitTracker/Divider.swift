@@ -9,13 +9,10 @@ import SwiftUI
 
 struct Divider: View {
     var body: some View {
-        
-     
             Rectangle()
                 .frame(height: 4)
                 .foregroundStyle(.white)
                 .padding(.vertical)
-        
     }
 }
 

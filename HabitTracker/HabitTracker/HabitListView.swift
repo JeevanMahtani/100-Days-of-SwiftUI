@@ -26,7 +26,7 @@ struct HabitListView: View {
                     VStack {
                         List {
                             ForEach(habits.habitList) { habit in
-                                NavigationLink(destination: HabitDetailView(habits: habits, habit: habit)) {
+                                NavigationLink(destination: HabitDetailView(habits: $habits, habit: habit)) {
                                 HStack {
                                     Image(systemName: habit.habitIcon)
                                         .resizable()
@@ -61,15 +61,10 @@ struct HabitListView: View {
                         .listStyle(.plain)
                        
                         .environment(\.defaultMinListRowHeight, 60)
-                        
-                       // .listRowInsets(EdgeInsets())
                     }
-                    
-                    // .border(.blue, width: 10)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.pleasantOrange)
-                // .border(.red, width: 5)
             }
             .sheet(isPresented: $isAddingRoutine) {
                 AddHabitSheet(habits: habits)
@@ -87,8 +82,6 @@ struct HabitListView: View {
                 }
             }
         }
-       
-        
     }
 }
 

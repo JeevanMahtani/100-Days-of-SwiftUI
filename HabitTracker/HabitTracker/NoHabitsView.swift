@@ -77,7 +77,6 @@ struct NoHabitsView: View {
                 }
             }
             .frame(width: 350, height: 60)
-            //.border(.blue, width: 5)
             
         Spacer()
         Spacer()
@@ -92,9 +91,6 @@ struct NoHabitsView: View {
                 .preferredColorScheme(.light)
                 .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: 2)
         }
-       // .border(.red, width: 5)
-        
-        
     }
 }
 
