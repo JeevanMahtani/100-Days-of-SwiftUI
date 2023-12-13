@@ -88,10 +88,10 @@ struct HabitDetailView: View {
             }
             VStack {
                 Button(action: {
-                   let habit = incrementDaysCompleted(habit: habit, habits: habits)
+                   var habit = incrementDaysCompleted(habit: habit, habits: habits)
                     if habit.targetMet {
                         targetCompleted.toggle()
-                        isDisabled.toggle()
+                        disableButton(habit: habit, habits: habits)
                     }
                 }) {
                     Text("Completed today")
@@ -105,8 +105,8 @@ struct HabitDetailView: View {
                         .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 5)
                         .environment(\.colorScheme, .light)
                 }
-                .disabled(isDisabled)
-                .opacity(isDisabled ? 0.7 : 1.0)
+                .disabled(habit.buttonDisabled)
+                .opacity(habit.buttonDisabled ? 0.7 : 1.0)
             }
             Spacer()
         }
@@ -148,6 +148,13 @@ struct HabitDetailView: View {
         return updatedHabit
     }
     
+    private func disableButton(habit: Habit, habits: Habits) {
+        var updatedHabit = habit
+        updatedHabit.buttonDisabled = true
+        if let index =  habits.habitList.firstIndex(where: { $0.habitName == habit.habitName} ) {
+            habits.habitList[index] = updatedHabit
+        } 
+    }    
 }
 
     #Preview {

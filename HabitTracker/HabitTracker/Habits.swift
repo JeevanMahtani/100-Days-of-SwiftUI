@@ -15,6 +15,7 @@ struct Habit: Identifiable, Codable, Equatable {
     let habbitType: String
     let targetDays: Int
     var daysCompleted: Int = 0
+    var buttonDisabled = false
     
     var targetMet: Bool {
         daysCompleted == targetDays
