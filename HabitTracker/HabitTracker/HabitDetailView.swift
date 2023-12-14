@@ -73,7 +73,7 @@ struct HabitDetailView: View {
                 Divider()
                 
                 VStack {
-                    Text("Target : \(habit.targetDays) days")
+                    Text("Target : \(habit.targetDays) \(habit.targetDays == 1 ? "day": "days")")
                         .font(.system(size: 30))
                         .fontDesign(.rounded)
                         .foregroundStyle(.white)
@@ -139,7 +139,7 @@ struct HabitDetailView: View {
     
     private func incrementDaysCompleted(habit: Habit, habits: Habits) -> Habit{
         var updatedHabit: Habit
-        if let index =  habits.habitList.firstIndex(where: { $0.habitName == habit.habitName} ) {
+        if let index =  habits.habitList.firstIndex(where: { $0.id == habit.id} ) {
             habits.habitList[index].daysCompleted += 1
             updatedHabit = habits.habitList[index]
         } else {
@@ -151,7 +151,7 @@ struct HabitDetailView: View {
     private func disableButton(habit: Habit, habits: Habits) {
         var updatedHabit = habit
         updatedHabit.buttonDisabled = true
-        if let index =  habits.habitList.firstIndex(where: { $0.habitName == habit.habitName} ) {
+        if let index =  habits.habitList.firstIndex(where: { $0.id == habit.id} ) {
             habits.habitList[index] = updatedHabit
         } 
     }    
