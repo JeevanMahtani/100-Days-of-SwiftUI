@@ -80,6 +80,7 @@ struct NoHabitsView: View {
             
         Spacer()
         Spacer()
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.pleasantOrange)

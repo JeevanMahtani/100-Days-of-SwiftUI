@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26DF9492B298BE60089962A /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DF9482B298BE60089962A /* ToggleView.swift */; };
 		C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */; };
 		C2CD458D2B257D4E003BAFF0 /* NoHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */; };
 		C2CD458F2B257D51003BAFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CD458E2B257D51003BAFF0 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C26DF9482B298BE60089962A /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		C2CD45872B257D4E003BAFF0 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHabitsView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				C2CD45A22B26FABE003BAFF0 /* HomeView.swift */,
 				C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */,
 				C2D555712B289DA20008AFAC /* Divider.swift */,
+				C26DF9482B298BE60089962A /* ToggleView.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				C2CD459D2B25A2CA003BAFF0 /* AddHabitSheet.swift in Sources */,
 				C2CD45A72B270977003BAFF0 /* ListView.swift in Sources */,
 				C2CD459F2B25BA1F003BAFF0 /* NavigationTitleColor.swift in Sources */,
+				C26DF9492B298BE60089962A /* ToggleView.swift in Sources */,
 				C2CD459B2B258F4F003BAFF0 /* HabitListView.swift in Sources */,
 				C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */,
 				C2D555722B289DA20008AFAC /* Divider.swift in Sources */,

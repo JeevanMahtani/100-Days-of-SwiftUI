@@ -136,7 +136,7 @@ struct HabitDetailView: View {
     private func isStarting(_ habit: Habit) -> Bool{
         habit.habbitType == "Start"
     }
-    
+
     private func incrementDaysCompleted(habit: Habit, habits: Habits) -> Habit{
         var updatedHabit: Habit
         if let index =  habits.habitList.firstIndex(where: { $0.id == habit.id} ) {

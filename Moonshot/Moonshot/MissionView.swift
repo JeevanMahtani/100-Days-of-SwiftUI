@@ -27,8 +27,8 @@ struct MissionView: View {
                     }
                 
                 VStack(alignment: .leading) {
-                  //  Text("Launch date: \(mission.formattedDate)")
-                       // .font(.title2).bold()
+                    Text("Launch date: \(mission.formattedDate)")
+                       .font(.title2).bold()
                 }
                 .padding(.top)
                 

@@ -16,6 +16,9 @@ struct AddHabitSheet: View {
     @State private var habitDescription: String = ""
     @State private var targetDays: Int = 1
     
+    @State private var reminderToggleState = false
+    @State private var scheduleToggleState = false
+    
     @Environment(\.dismiss) var dismiss
     
     var habits: Habits
@@ -62,8 +65,52 @@ struct AddHabitSheet: View {
                         })  {
                             Stepper("\(targetDays.formatted())", value: $targetDays, in: 1...100, step: 1)
                         }
+                        
+                   
+                    
+                        
+                     /*   if reminderToggleState {
+                            ToggleView(toggleState: $scheduleToggleState, title: "Set Timing")
+                        }*/
+
                     }
                     .scrollContentBackground(.hidden)
+                    
+                    ZStack {
+                      
+                        VStack(spacing: 20) {
+                         
+                            
+                            ToggleView(toggleState: $reminderToggleState, title: "Daily Reminder")
+                            
+                               if reminderToggleState {
+                                   ToggleView(toggleState: $scheduleToggleState, title: "Set Timing")
+                               }
+                            
+                            
+                        }  
+                        .frame(width: .infinity)
+
+                    }
+                    .frame(width: .infinity, height: reminderToggleState ? 160: 120)
+                    .padding(.horizontal)
+                    .background(.thickMaterial)
+                    .preferredColorScheme(.light)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+
+  
                     
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
