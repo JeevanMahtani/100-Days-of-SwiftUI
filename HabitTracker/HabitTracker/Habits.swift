@@ -29,8 +29,6 @@ struct Habit: Identifiable, Codable, Equatable {
         case start = "Start"
         case stop = "Stop"
     }
-    
-
 }
 
 @Observable

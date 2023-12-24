@@ -41,26 +41,34 @@ struct HabitListView: View {
                                             .font(.system(size: 18))
                                       } 
                                    }
-                                .frame(height: 75)                              
-                                    
+                                   .frame(height: 75)   
+                                
                                 }
+                                
                                 .listRowSeparator(.hidden)
+
                                 .listRowBackground(
-                                    RoundedRectangle(cornerRadius: 10)
+                                    RoundedRectangle(cornerRadius: 5)
                                         .fill(.thickMaterial)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.pleasantOrange, lineWidth: 10)
-                                        )
+                                        .padding(
+                                                  EdgeInsets(
+                                                      top: 2,
+                                                      leading: 10,
+                                                      bottom: 2,
+                                                      trailing: 10
+                                                  )
+                                              )
                                 )
                             }
+                            
                             .onDelete(perform: habits.removeHabit)
                         }
+                        .scrollIndicators(.hidden)
                         .environment(\.colorScheme, .light)
                         .frame(width: geometry.size.width * 0.9)
                         .listStyle(.plain)
                        
-                        .environment(\.defaultMinListRowHeight, 60)
+                       
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

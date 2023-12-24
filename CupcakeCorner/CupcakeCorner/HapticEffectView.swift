@@ -1,0 +1,23 @@
+//
+//  HapticEffectView.swift
+//  CupcakeCorner
+//
+//  Created by Jeevan Mahtani on 22/12/23.
+//
+
+import SwiftUI
+
+struct HapticEffectView: View {
+    @State private var counter = 0
+    
+    var body: some View {
+        Button("Tap Count: \(counter)") {
+            counter += 1
+        }
+        .sensoryFeedback(.increase , trigger: counter)
+    }
+}
+
+#Preview {
+    HapticEffectView()
+}

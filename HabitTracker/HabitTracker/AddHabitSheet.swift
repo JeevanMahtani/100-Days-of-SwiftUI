@@ -19,9 +19,18 @@ struct AddHabitSheet: View {
     @State private var reminderToggleState = false
     @State private var scheduleToggleState = false
     
+    @State private var triggerSuccess = false
+    
     @Environment(\.dismiss) var dismiss
     
     var habits: Habits
+    
+    var validHabit: Bool {
+        if habitName.isEmpty || habitDescription.isEmpty {
+            return false
+        }
+        return true
+    }
     	
     var body: some View {
         
@@ -127,12 +136,16 @@ struct AddHabitSheet: View {
                         Button(action: {
                             let habit = Habit(habitName: habitName, habitDescription: habitDescription, habbitType: habitType, targetDays: targetDays)
                             habits.habitList.append(habit)
+                            triggerSuccess.toggle()
                             dismiss()
                         }) {
                             Text("Save")
                                 .foregroundStyle(.white)
                                 .font(.title3).bold()                       
                         }
+                        .sensoryFeedback(.success, trigger: triggerSuccess)
+                        .disabled(validHabit == false)
+                        .opacity(validHabit == false ? 0.5: 1)
                     }
                     
                     ToolbarItem(placement: .cancellationAction) {
@@ -144,8 +157,8 @@ struct AddHabitSheet: View {
                                 .font(.title3).bold()                       
                         }
                     }
-                }
-            }   
+                }                
+            }
         }
     }
 }

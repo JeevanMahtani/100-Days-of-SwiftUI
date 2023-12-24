@@ -16,13 +16,11 @@ struct ToggleView: View {
                 HStack {
                    Text(title)
                     Toggle("",isOn: $toggleState)
-                    
                         .toggleStyle(SwitchToggleStyle(tint: Color.pleasantOrange))
                 }
                 .foregroundStyle(toggleState ? Color.pleasantOrange : Color.gray)
                 .font(.title2.bold())
-                .frame(width: 300, height: 60)
-                
+                .frame(width: 300, height: 60)                
                 .padding(.horizontal)
                 .cornerRadius(10)
                 .overlay(RoundedRectangle(cornerRadius: 10)

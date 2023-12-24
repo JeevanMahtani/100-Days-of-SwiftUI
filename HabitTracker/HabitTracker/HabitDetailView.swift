@@ -88,7 +88,7 @@ struct HabitDetailView: View {
             }
             VStack {
                 Button(action: {
-                   var habit = incrementDaysCompleted(habit: habit, habits: habits)
+                    let habit = incrementDaysCompleted(habit: habit, habits: habits)
                     if habit.targetMet {
                         targetCompleted.toggle()
                         disableButton(habit: habit, habits: habits)

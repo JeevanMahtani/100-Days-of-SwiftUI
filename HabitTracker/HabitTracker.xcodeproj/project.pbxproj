@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C25215592B36DC7E0045B4A1 /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25215582B36DC7E0045B4A1 /* ExampleList.swift */; };
 		C26DF9492B298BE60089962A /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DF9482B298BE60089962A /* ToggleView.swift */; };
 		C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */; };
 		C2CD458D2B257D4E003BAFF0 /* NoHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C25215582B36DC7E0045B4A1 /* ExampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleList.swift; sourceTree = "<group>"; };
 		C26DF9482B298BE60089962A /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		C2CD45872B257D4E003BAFF0 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				C2CD45A02B26F391003BAFF0 /* Habits.swift */,
 				C2CD45A62B270977003BAFF0 /* ListView.swift */,
+				C25215582B36DC7E0045B4A1 /* ExampleList.swift */,
 				C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */,
 				C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */,
 				C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */,
@@ -179,6 +182,7 @@
 				C2CD45A32B26FABE003BAFF0 /* HomeView.swift in Sources */,
 				C2CD45992B25828C003BAFF0 /* ColorExtensions.swift in Sources */,
 				C2CD45A12B26F391003BAFF0 /* Habits.swift in Sources */,
+				C25215592B36DC7E0045B4A1 /* ExampleList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
