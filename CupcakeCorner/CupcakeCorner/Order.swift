@@ -7,8 +7,17 @@
 
 import Foundation
 
+
+struct UserAddress: Codable {
+    var name = ""
+    var streetAddress = ""
+    var city = ""
+    var zip = ""
+}
+
 @Observable
 class Order: Codable {
+    
     
     enum CodingKeys: String, CodingKey {
         case _type = "type"
@@ -16,10 +25,7 @@ class Order: Codable {
         case _specialRequestEnabled = "specialRequestEnabled"
         case _extraFrosting = "extraFrosting"
         case _addSprinkles = "addSprinkles"
-        case _name = "name"
-        case _city = "city"
-        case _streetAddress = "streetAddress"
-        case _zip = "zip"
+        case _userAddress = "userAddress"
     }
 
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
@@ -37,20 +43,33 @@ class Order: Codable {
     }
     
     var extraFrosting = false
-    var addSprinkles = false
+    var addSprinkles = false		
  
-
-    var name = ""
-    var streetAddress = ""
-    var city = ""
-    var zip = ""
+    var userAddress: UserAddress {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(userAddress) {
+                UserDefaults.standard.set(encoded, forKey: "UserAddress")
+            }
+        }
+    }
+    
+    init() {
+        if let address = UserDefaults.standard.data(forKey: "UserAddress") {
+            if let decodedItems = try? JSONDecoder().decode(UserAddress.self, from: address) {
+                userAddress = decodedItems
+                return
+            }
+        }  
+       userAddress = UserAddress()
+    }
     
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        
+        if userAddress.name.isEmpty || userAddress.streetAddress.isEmpty || userAddress.city.isEmpty || userAddress.zip.isEmpty {
             return false
         }
         
-        if name.containsOnlyWhitespace() || streetAddress.containsOnlyWhitespace() || city.containsOnlyWhitespace() || zip.containsOnlyWhitespace() {
+        if userAddress.name.containsOnlyWhitespace() || userAddress.streetAddress.containsOnlyWhitespace() || userAddress.city.containsOnlyWhitespace() || userAddress.zip.containsOnlyWhitespace() {
             return false
         }
         

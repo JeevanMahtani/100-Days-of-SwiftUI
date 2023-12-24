@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C252155B2B37DACF0045B4A1 /* CustomerAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252155A2B37DACF0045B4A1 /* CustomerAddressView.swift */; };
 		C29648D42B33301A009C2188 /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29648D32B33301A009C2188 /* CupcakeCornerApp.swift */; };
 		C29648D62B33301A009C2188 /* URLSessionsRetrieveDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29648D52B33301A009C2188 /* URLSessionsRetrieveDataView.swift */; };
 		C29648D82B33301C009C2188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29648D72B33301C009C2188 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C252155A2B37DACF0045B4A1 /* CustomerAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAddressView.swift; sourceTree = "<group>"; };
 		C29648D02B33301A009C2188 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29648D32B33301A009C2188 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		C29648D52B33301A009C2188 /* URLSessionsRetrieveDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionsRetrieveDataView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				C2B923F52B3572FB00C6EB11 /* Order.swift */,
 				C2B923F72B35737D00C6EB11 /* OrderView.swift */,
 				C2B923FB2B36AB2000C6EB11 /* CheckoutView.swift */,
+				C252155A2B37DACF0045B4A1 /* CustomerAddressView.swift */,
 			);
 			path = CupcakeCorner;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				C2B923FC2B36AB2000C6EB11 /* CheckoutView.swift in Sources */,
 				C2B923F02B3569AF00C6EB11 /* CoreHapticsView.swift in Sources */,
 				C2B923F62B3572FB00C6EB11 /* Order.swift in Sources */,
+				C252155B2B37DACF0045B4A1 /* CustomerAddressView.swift in Sources */,
 				C29648E42B333B1B009C2188 /* FormValidationView.swift in Sources */,
 				C2B923F22B35705500C6EB11 /* ClassCodableView.swift in Sources */,
 				C2B923FA2B35772B00C6EB11 /* AddressView.swift in Sources */,

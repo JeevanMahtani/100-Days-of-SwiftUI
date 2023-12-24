@@ -14,6 +14,8 @@ struct CheckoutView: View {
     @State private var alertMessage = ""
     @State private var showingAlert = false
     
+    @State private var showAddressLink = false
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -32,23 +34,29 @@ struct CheckoutView: View {
                 
                 Button("Place Order") {
                     Task {
-                        await placeOrder()
+                        await placeOrder(for: order)
                     }
                 }
                     .padding()
+            }
+            
+            if showAddressLink {
+                NavigationLink("Order details", destination: CustomerAddressView(order: order))
             }
         }
         .navigationTitle("Check out")
         .navigationBarTitleDisplayMode(.inline)
         .scrollBounceBehavior(.basedOnSize)
-        .alert(alertTitle, isPresented: $showingAlert) {
-            Button("OK") { }
+        .alert(alertTitle,isPresented: $showingAlert) {
+            Button("OK") {
+                showAddressLink.toggle()
+            }
         } message: {
             Text(alertMessage)
         }
     }
     
-    func placeOrder() async {
+    func placeOrder(for _order: Order) async {
         guard let encoded = try? JSONEncoder().encode(order) else {
             print("Failed to encode order")
             return
@@ -65,7 +73,6 @@ struct CheckoutView: View {
             let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
             alertTitle = "Thank you!"
             alertMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
-            
             showingAlert = true
             
         } catch {
