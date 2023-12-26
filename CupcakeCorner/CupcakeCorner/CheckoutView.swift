@@ -41,7 +41,7 @@ struct CheckoutView: View {
             }
             
             if showAddressLink {
-                NavigationLink("Order details", destination: CustomerAddressView(order: order))
+                NavigationLink("Order details", destination: CustomerAddressView())
             }
         }
         .navigationTitle("Check out")
@@ -74,6 +74,8 @@ struct CheckoutView: View {
             alertTitle = "Thank you!"
             alertMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way!"
             showingAlert = true
+            order.userAddress = 
+            UserAddress(name: order.userAddress.name, streetAddress: order.userAddress.streetAddress, city: order.userAddress.city, zip: order.userAddress.zip)
             
         } catch {
             print("Check out failed \(error.localizedDescription)")

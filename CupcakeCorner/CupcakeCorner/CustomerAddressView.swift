@@ -8,29 +8,23 @@
 import SwiftUI
 
 struct CustomerAddressView: View {
-    var order: Order
+    @State private var addresses = Addresses()
     var body: some View {
         NavigationStack {
-            Form {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Name: \(order.userAddress.name)")
-                        .font(.title2)
-                    Text("Street Address: \(order.userAddress.streetAddress)")
-                        .font(.title2)
-                    Text("City: \(order.userAddress.city)")
-                        .font(.title2)
-                    Text("Zip: \(order.userAddress.zip)")
-                        .font(.title2)
+            VStack {
+                List(addresses) { address in
+                    VStack(alignment: .leading) {
+                        Text(address.name)
+                        Text(address.streetAddress)
+                        Text(address.city)
+                        Text(address.zip)
+                    }
                 }
-                .navigationTitle("User details")
             }
         } 
     }
 }
 
 #Preview {
-    var address = UserAddress(name: "Tom", streetAddress: "123 cupcake street", city: "London", zip : String(123))
-    var order = Order()
-    order.userAddress = address
-    return CustomerAddressView(order: order)
+    CustomerAddressView()
 }

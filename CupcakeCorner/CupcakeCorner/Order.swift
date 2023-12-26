@@ -8,11 +8,45 @@
 import Foundation
 
 
-struct UserAddress: Codable {
+struct UserAddress: Codable, Identifiable {
+    var id = UUID()
     var name = ""
     var streetAddress = ""
     var city = ""
     var zip = ""
+}
+
+@Observable
+class Addresses: Codable, RandomAccessCollection {
+    var listOfAddressIds = [UUID]()
+    var addresses = [UserAddress]()
+    
+    var startIndex: Int { listOfAddressIds.startIndex }
+       var endIndex: Int { listOfAddressIds.endIndex }
+
+       subscript(position: Int) -> UserAddress {
+           return addresses[position]
+       }
+    
+    init() {
+        if let savedItems = UserDefaults.standard.data(forKey: "addressIDs") {
+            if let decodedIds = try? JSONDecoder().decode([UUID].self, from: savedItems) {
+                listOfAddressIds = decodedIds
+            } else {
+                listOfAddressIds = []
+            }
+        }        
+        
+        for id in listOfAddressIds {
+            if let savedItem = UserDefaults.standard.data(forKey: "UserAddress \(id)") {
+                if let decodedAddress = try? JSONDecoder().decode(UserAddress.self, from: savedItem) {
+                    addresses.append(decodedAddress)
+                } else {
+                    addresses = []
+                }
+            } 
+        }
+    }    
 }
 
 @Observable
@@ -26,6 +60,7 @@ class Order: Codable {
         case _extraFrosting = "extraFrosting"
         case _addSprinkles = "addSprinkles"
         case _userAddress = "userAddress"
+        case _id = "id"
     }
 
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
@@ -47,20 +82,40 @@ class Order: Codable {
  
     var userAddress: UserAddress {
         didSet {
+            let key = "UserAddress \(id)"
             if let encoded = try? JSONEncoder().encode(userAddress) {
-                UserDefaults.standard.set(encoded, forKey: "UserAddress")
+                UserDefaults.standard.set(encoded, forKey: key)
+            }
+        }
+    }
+    
+    var id: UUID
+    var addressIDs = [UUID]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(addressIDs) {
+                UserDefaults.standard.set(encoded, forKey: "addressIDs")
             }
         }
     }
     
     init() {
-        if let address = UserDefaults.standard.data(forKey: "UserAddress") {
-            if let decodedItems = try? JSONDecoder().decode(UserAddress.self, from: address) {
-                userAddress = decodedItems
-                return
+        
+        if let savedItems = UserDefaults.standard.data(forKey: "addressIDs") {
+            if let decodedItems = try? JSONDecoder().decode([UUID].self, from: savedItems) {
+                addressIDs = decodedItems
+            } else {
+                addressIDs = [] 
             }
-        }  
-       userAddress = UserAddress()
+        }      
+     
+        type = 0
+        quantity = 3
+        specialRequestEnabled = false
+        extraFrosting = false
+        addSprinkles = false
+        userAddress = UserAddress()
+        id = UUID()
+        addressIDs.append(id)
     }
     
     var hasValidAddress: Bool {
