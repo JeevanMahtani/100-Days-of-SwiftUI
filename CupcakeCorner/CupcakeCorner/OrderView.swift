@@ -10,15 +10,24 @@ import SwiftUI
 struct OrderView: View {
     
     @State private var order = Order()
+    @State private var selectedFlavour: String? = ""
     var body: some View {
         NavigationStack {
             Form {
-                Section {
-                    Picker("Select your cake type", selection: $order.type) {
-                        ForEach(Order.types.indices, id: \.self) {
-                            Text(Order.types[$0])
-                        }
+               
+                Section("Select a flavour") {
+                    CupcakesView(order: order, selectedFlavour: $selectedFlavour)
+                        .frame(height: 100)
+                    
+                    HStack {
+                        Text("Selected flavour")
+                        Spacer()
+                        Text(selectedFlavour ?? "")
                     }
+
+                }
+                Section {
+               
                     
                     Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
                 }
