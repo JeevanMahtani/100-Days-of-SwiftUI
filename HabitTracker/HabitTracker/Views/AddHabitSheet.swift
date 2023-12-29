@@ -74,54 +74,10 @@ struct AddHabitSheet: View {
                         })  {
                             Stepper("\(targetDays.formatted())", value: $targetDays, in: 1...100, step: 1)
                         }
-                        
-                   
-                    
-                        
-                     /*   if reminderToggleState {
-                            ToggleView(toggleState: $scheduleToggleState, title: "Set Timing")
-                        }*/
-
                     }
                     .scrollContentBackground(.hidden)
-                    
-                    ZStack {
-                      
-                        VStack(spacing: 20) {
-                         
-                            
-                            ToggleView(toggleState: $reminderToggleState, title: "Daily Reminder")
-                            
-                               if reminderToggleState {
-                                   ToggleView(toggleState: $scheduleToggleState, title: "Set Timing")
-                               }
-                            
-                            
-                        }  
-                        .frame(width: .infinity)
-
-                    }
-                    .frame(width: .infinity, height: reminderToggleState ? 160: 120)
-                    .padding(.horizontal)
-                    .background(.thickMaterial)
-                    .preferredColorScheme(.light)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-
-  
-                    
                 }
+                .scrollBounceBehavior(.basedOnSize)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.pleasantOrange)
                 .navigationBarTitleDisplayMode(.inline)
@@ -134,7 +90,7 @@ struct AddHabitSheet: View {
                     
                     ToolbarItem(placement: .confirmationAction) {
                         Button(action: {
-                            let habit = Habit(habitName: habitName, habitDescription: habitDescription, habbitType: habitType, targetDays: targetDays)
+                            let habit = Habit(habitName: habitName, habitDescription: habitDescription, habitType: habitType, targetDays: targetDays)
                             habits.habitList.append(habit)
                             triggerSuccess.toggle()
                             dismiss()

@@ -10,12 +10,13 @@ import SwiftUI
 struct HabitDetailView: View {
     @State private var targetCompleted = false
     @State private var isDisabled = false
+    @State private var settingsShown = false
     
     @Environment(\.presentationMode) var presentation
     
     @Binding var habits: Habits
     
-    var habit: Habit
+    @Binding var habit: Habit
 
     var body: some View {
         VStack(spacing: 20) {
@@ -123,6 +124,15 @@ struct HabitDetailView: View {
                         self.presentation.wrappedValue.dismiss()
                     }
             }
+            
+            ToolbarItem (placement: .topBarTrailing)  {
+                Image(systemName: "gearshape")
+                    .foregroundColor(.white)
+                    .bold()
+                    .onTapGesture {
+                        self.settingsShown.toggle()
+                    }
+            }
         })
         .alert(isPresented: $targetCompleted) {
             Alert(
@@ -130,11 +140,14 @@ struct HabitDetailView: View {
                 message: Text("You have achieved your target, great job!"),
                 dismissButton: .default(Text("OK"))
             )
+        }
+        .sheet(isPresented: $settingsShown) {
+            HabitSettingsView(habit: $habit)
         }        
     }
     
     private func isStarting(_ habit: Habit) -> Bool{
-        habit.habbitType == "Start"
+        habit.habitType == "Start"
     }
 
     private func incrementDaysCompleted(habit: Habit, habits: Habits) -> Habit{
@@ -162,5 +175,5 @@ struct HabitDetailView: View {
         let description = """
             This is the description of the habit. This is some placeholder text to see how the habit description looks like. 
             """
-        return HabitDetailView(habits: .constant(Habits()), habit: Habit(habitName: "Placeholder Habit Name", habitDescription: description, habbitType: "Start", targetDays: 14))
+        return HabitDetailView(habits: .constant(Habits()), habit: .constant(Habit(habitName: "Placeholder Habit Name", habitDescription: description, habitType: "Start", targetDays: 14)))
 }

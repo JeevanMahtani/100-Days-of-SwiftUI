@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C25215592B36DC7E0045B4A1 /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25215582B36DC7E0045B4A1 /* ExampleList.swift */; };
+		C25ED9B12B3D5B9500355B3E /* HabitSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9B02B3D5B9500355B3E /* HabitSettingsView.swift */; };
+		C25ED9B32B3E902C00355B3E /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9B22B3E902C00355B3E /* TimePicker.swift */; };
 		C26DF9492B298BE60089962A /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DF9482B298BE60089962A /* ToggleView.swift */; };
 		C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */; };
 		C2CD458D2B257D4E003BAFF0 /* NoHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		C25215582B36DC7E0045B4A1 /* ExampleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleList.swift; sourceTree = "<group>"; };
+		C25ED9B02B3D5B9500355B3E /* HabitSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitSettingsView.swift; sourceTree = "<group>"; };
+		C25ED9B22B3E902C00355B3E /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		C26DF9482B298BE60089962A /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		C2CD45872B257D4E003BAFF0 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
@@ -54,6 +58,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C25ED9CE2B3EAE6D00355B3E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C26DF9482B298BE60089962A /* ToggleView.swift */,
+				C2D555712B289DA20008AFAC /* Divider.swift */,
+				C25ED9B22B3E902C00355B3E /* TimePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C25ED9CF2B3EAE8700355B3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2CD45A22B26FABE003BAFF0 /* HomeView.swift */,
+				C2CD459C2B25A2CA003BAFF0 /* AddHabitSheet.swift */,
+				C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */,
+				C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */,
+				C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */,
+				C25ED9B02B3D5B9500355B3E /* HabitSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C25ED9D02B3EAED600355B3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2CD45A02B26F391003BAFF0 /* Habits.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C25ED9D12B3EAEE600355B3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2CD459E2B25BA1F003BAFF0 /* NavigationTitleColor.swift */,
+				C2CD45982B25828C003BAFF0 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C2CD457E2B257D4E003BAFF0 = {
 			isa = PBXGroup;
 			children = (
@@ -73,21 +117,15 @@
 		C2CD45892B257D4E003BAFF0 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
-				C2CD45A02B26F391003BAFF0 /* Habits.swift */,
+				C25ED9D12B3EAEE600355B3E /* Extensions */,
+				C25ED9D02B3EAED600355B3E /* Models */,
+				C25ED9CF2B3EAE8700355B3E /* Views */,
+				C25ED9CE2B3EAE6D00355B3E /* Components */,
 				C2CD45A62B270977003BAFF0 /* ListView.swift */,
 				C25215582B36DC7E0045B4A1 /* ExampleList.swift */,
 				C2CD458A2B257D4E003BAFF0 /* HabitTrackerApp.swift */,
-				C2CD458C2B257D4E003BAFF0 /* NoHabitsView.swift */,
-				C2CD459A2B258F4F003BAFF0 /* HabitListView.swift */,
 				C2CD458E2B257D51003BAFF0 /* Assets.xcassets */,
 				C2CD45902B257D51003BAFF0 /* Preview Content */,
-				C2CD45982B25828C003BAFF0 /* ColorExtensions.swift */,
-				C2CD459C2B25A2CA003BAFF0 /* AddHabitSheet.swift */,
-				C2CD459E2B25BA1F003BAFF0 /* NavigationTitleColor.swift */,
-				C2CD45A22B26FABE003BAFF0 /* HomeView.swift */,
-				C2D5556F2B285DFE0008AFAC /* HabitDetailView.swift */,
-				C2D555712B289DA20008AFAC /* Divider.swift */,
-				C26DF9482B298BE60089962A /* ToggleView.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -174,10 +212,12 @@
 				C2CD459D2B25A2CA003BAFF0 /* AddHabitSheet.swift in Sources */,
 				C2CD45A72B270977003BAFF0 /* ListView.swift in Sources */,
 				C2CD459F2B25BA1F003BAFF0 /* NavigationTitleColor.swift in Sources */,
+				C25ED9B12B3D5B9500355B3E /* HabitSettingsView.swift in Sources */,
 				C26DF9492B298BE60089962A /* ToggleView.swift in Sources */,
 				C2CD459B2B258F4F003BAFF0 /* HabitListView.swift in Sources */,
 				C2CD458B2B257D4E003BAFF0 /* HabitTrackerApp.swift in Sources */,
 				C2D555722B289DA20008AFAC /* Divider.swift in Sources */,
+				C25ED9B32B3E902C00355B3E /* TimePicker.swift in Sources */,
 				C2D555702B285DFE0008AFAC /* HabitDetailView.swift in Sources */,
 				C2CD45A32B26FABE003BAFF0 /* HomeView.swift in Sources */,
 				C2CD45992B25828C003BAFF0 /* ColorExtensions.swift in Sources */,

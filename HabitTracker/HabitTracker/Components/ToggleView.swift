@@ -20,14 +20,13 @@ struct ToggleView: View {
                 }
                 .foregroundStyle(toggleState ? Color.pleasantOrange : Color.gray)
                 .font(.title2.bold())
-                .frame(width: 300, height: 60)                
+                .frame(width: .infinity, height: 60)    
                 .padding(.horizontal)
                 .cornerRadius(10)
                 .overlay(RoundedRectangle(cornerRadius: 10)
                     .stroke(toggleState ? Color.pleasantOrange: Color.gray, lineWidth: 3)
                 )
-                
-
+                .animation(.bouncy)
         }
     }
 }

@@ -26,7 +26,7 @@ struct HabitListView: View {
                     VStack {
                         List {
                             ForEach(habits.habitList) { habit in
-                                NavigationLink(destination: HabitDetailView(habits: $habits, habit: habit)) {
+                                NavigationLink(destination: HabitDetailView(habits: $habits, habit: $habits.habitList[habits.habitList.firstIndex(where: { $0.id == habit.id })!])) {
                                 HStack {
                                     Image(systemName: habit.habitIcon)
                                         .resizable()
@@ -95,6 +95,6 @@ struct HabitListView: View {
 
 #Preview {
     let habits = Habits()
-    habits.habitList.append(Habit(habitName: "Test Habbit", habitDescription: "This is a test habbit description.", habbitType: "Start", targetDays: 14))
+    habits.habitList.append(Habit(habitName: "Test Habbit", habitDescription: "This is a test habbit description.", habitType: "Start", targetDays: 14))
     return HabitListView(habits: .constant(habits))
 }
