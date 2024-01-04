@@ -1,5 +1,5 @@
 //
-//  HabitDetailView.swift
+//  HabitSettingsView.swift
 //  HabitTracker
 //
 //  Created by Jeevan Mahtani on 12/12/23.
