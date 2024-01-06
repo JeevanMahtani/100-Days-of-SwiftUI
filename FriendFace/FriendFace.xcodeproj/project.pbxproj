@@ -7,34 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C20458432B444C1A005E0C2F /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20458422B444C1A005E0C2F /* UsersView.swift */; };
-		C22E63AD2B4453D5005A8959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E63AC2B4453D5005A8959 /* ContentView.swift */; };
-		C23344472B455C6A00A67428 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344462B455C6A00A67428 /* Job.swift */; };
-		C25ED9DF2B4140FE00355B3E /* SwiftDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */; };
-		C25ED9E12B4140FE00355B3E /* AddEditUserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */; };
-		C25ED9E32B41410000355B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25ED9E22B41410000355B3E /* Assets.xcassets */; };
-		C25ED9E62B41410000355B3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25ED9E52B41410000355B3E /* Preview Assets.xcassets */; };
-		C25ED9ED2B41414F00355B3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9EC2B41414F00355B3E /* User.swift */; };
-		C25ED9EF2B4141AD00355B3E /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9EE2B4141AD00355B3E /* EditUserView.swift */; };
-		C25ED9F32B41483500355B3E /* PredicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9F22B41483500355B3E /* PredicateView.swift */; };
+		C23344572B49284600A67428 /* FriendFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344562B49284600A67428 /* FriendFaceApp.swift */; };
+		C23344592B49284600A67428 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344582B49284600A67428 /* UserListView.swift */; };
+		C233445B2B49284800A67428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C233445A2B49284800A67428 /* Assets.xcassets */; };
+		C233445E2B49284800A67428 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C233445D2B49284800A67428 /* Preview Assets.xcassets */; };
+		C23344652B49285900A67428 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344642B49285900A67428 /* User.swift */; };
+		C23344672B492CBC00A67428 /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344662B492CBC00A67428 /* UserFetcher.swift */; };
+		C23344692B493C0C00A67428 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344682B493C0C00A67428 /* UserDetailView.swift */; };
+		C233446B2B49512000A67428 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C233446A2B49512000A67428 /* DividerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C20458422B444C1A005E0C2F /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
-		C22E63AC2B4453D5005A8959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C23344462B455C6A00A67428 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataProjectApp.swift; sourceTree = "<group>"; };
-		C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditUserHomeView.swift; sourceTree = "<group>"; };
-		C25ED9E22B41410000355B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C25ED9E52B41410000355B3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C25ED9EC2B41414F00355B3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C25ED9EE2B4141AD00355B3E /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
-		C25ED9F22B41483500355B3E /* PredicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateView.swift; sourceTree = "<group>"; };
+		C23344532B49284600A67428 /* FriendFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23344562B49284600A67428 /* FriendFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceApp.swift; sourceTree = "<group>"; };
+		C23344582B49284600A67428 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		C233445A2B49284800A67428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C233445D2B49284800A67428 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C23344642B49285900A67428 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C23344662B492CBC00A67428 /* UserFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
+		C23344682B493C0C00A67428 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		C233446A2B49512000A67428 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C25ED9D82B4140FE00355B3E /* Frameworks */ = {
+		C23344502B49284600A67428 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +40,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C25ED9D22B4140FE00355B3E = {
+		C233444A2B49284600A67428 = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DD2B4140FE00355B3E /* SwiftDataProject */,
-				C25ED9DC2B4140FE00355B3E /* Products */,
+				C23344552B49284600A67428 /* FriendFace */,
+				C23344542B49284600A67428 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C25ED9DC2B4140FE00355B3E /* Products */ = {
+		C23344542B49284600A67428 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */,
+				C23344532B49284600A67428 /* FriendFace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C25ED9DD2B4140FE00355B3E /* SwiftDataProject */ = {
+		C23344552B49284600A67428 /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */,
-				C25ED9EE2B4141AD00355B3E /* EditUserView.swift */,
-				C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */,
-				C25ED9EC2B41414F00355B3E /* User.swift */,
-				C23344462B455C6A00A67428 /* Job.swift */,
-				C25ED9E22B41410000355B3E /* Assets.xcassets */,
-				C25ED9E42B41410000355B3E /* Preview Content */,
-				C25ED9F22B41483500355B3E /* PredicateView.swift */,
-				C20458422B444C1A005E0C2F /* UsersView.swift */,
-				C22E63AC2B4453D5005A8959 /* ContentView.swift */,
+				C23344682B493C0C00A67428 /* UserDetailView.swift */,
+				C23344662B492CBC00A67428 /* UserFetcher.swift */,
+				C23344562B49284600A67428 /* FriendFaceApp.swift */,
+				C23344582B49284600A67428 /* UserListView.swift */,
+				C23344642B49285900A67428 /* User.swift */,
+				C233445A2B49284800A67428 /* Assets.xcassets */,
+				C233445C2B49284800A67428 /* Preview Content */,
+				C233446A2B49512000A67428 /* DividerView.swift */,
 			);
-			path = SwiftDataProject;
+			path = FriendFace;
 			sourceTree = "<group>";
 		};
-		C25ED9E42B41410000355B3E /* Preview Content */ = {
+		C233445C2B49284800A67428 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9E52B41410000355B3E /* Preview Assets.xcassets */,
+				C233445D2B49284800A67428 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +82,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C25ED9DA2B4140FE00355B3E /* SwiftDataProject */ = {
+		C23344522B49284600A67428 /* FriendFace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C25ED9E92B41410000355B3E /* Build configuration list for PBXNativeTarget "SwiftDataProject" */;
+			buildConfigurationList = C23344612B49284800A67428 /* Build configuration list for PBXNativeTarget "FriendFace" */;
 			buildPhases = (
-				C25ED9D72B4140FE00355B3E /* Sources */,
-				C25ED9D82B4140FE00355B3E /* Frameworks */,
-				C25ED9D92B4140FE00355B3E /* Resources */,
+				C233444F2B49284600A67428 /* Sources */,
+				C23344502B49284600A67428 /* Frameworks */,
+				C23344512B49284600A67428 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftDataProject;
-			productName = SwiftDataProject;
-			productReference = C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */;
+			name = FriendFace;
+			productName = FriendFace;
+			productReference = C23344532B49284600A67428 /* FriendFace.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C25ED9D32B4140FE00355B3E /* Project object */ = {
+		C233444B2B49284600A67428 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					C25ED9DA2B4140FE00355B3E = {
+					C23344522B49284600A67428 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = C25ED9D62B4140FE00355B3E /* Build configuration list for PBXProject "SwiftDataProject" */;
+			buildConfigurationList = C233444E2B49284600A67428 /* Build configuration list for PBXProject "FriendFace" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +122,46 @@
 				en,
 				Base,
 			);
-			mainGroup = C25ED9D22B4140FE00355B3E;
-			productRefGroup = C25ED9DC2B4140FE00355B3E /* Products */;
+			mainGroup = C233444A2B49284600A67428;
+			productRefGroup = C23344542B49284600A67428 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C25ED9DA2B4140FE00355B3E /* SwiftDataProject */,
+				C23344522B49284600A67428 /* FriendFace */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C25ED9D92B4140FE00355B3E /* Resources */ = {
+		C23344512B49284600A67428 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25ED9E62B41410000355B3E /* Preview Assets.xcassets in Resources */,
-				C25ED9E32B41410000355B3E /* Assets.xcassets in Resources */,
+				C233445E2B49284800A67428 /* Preview Assets.xcassets in Resources */,
+				C233445B2B49284800A67428 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C25ED9D72B4140FE00355B3E /* Sources */ = {
+		C233444F2B49284600A67428 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25ED9E12B4140FE00355B3E /* AddEditUserHomeView.swift in Sources */,
-				C25ED9EF2B4141AD00355B3E /* EditUserView.swift in Sources */,
-				C22E63AD2B4453D5005A8959 /* ContentView.swift in Sources */,
-				C25ED9F32B41483500355B3E /* PredicateView.swift in Sources */,
-				C25ED9DF2B4140FE00355B3E /* SwiftDataProjectApp.swift in Sources */,
-				C25ED9ED2B41414F00355B3E /* User.swift in Sources */,
-				C20458432B444C1A005E0C2F /* UsersView.swift in Sources */,
-				C23344472B455C6A00A67428 /* Job.swift in Sources */,
+				C23344672B492CBC00A67428 /* UserFetcher.swift in Sources */,
+				C23344592B49284600A67428 /* UserListView.swift in Sources */,
+				C23344572B49284600A67428 /* FriendFaceApp.swift in Sources */,
+				C23344692B493C0C00A67428 /* UserDetailView.swift in Sources */,
+				C233446B2B49512000A67428 /* DividerView.swift in Sources */,
+				C23344652B49285900A67428 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C25ED9E72B41410000355B3E /* Debug */ = {
+		C233445F2B49284800A67428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		C25ED9E82B41410000355B3E /* Release */ = {
+		C23344602B49284800A67428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,16 +280,15 @@
 			};
 			name = Release;
 		};
-		C25ED9EA2B41410000355B3E /* Debug */ = {
+		C23344622B49284800A67428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Y927CFRKM;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendFace/Preview Content\"";
+				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,25 +302,23 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SwiftDataProject.SwiftDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.friendface.FriendFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C25ED9EB2B41410000355B3E /* Release */ = {
+		C23344632B49284800A67428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Y927CFRKM;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendFace/Preview Content\"";
+				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -343,9 +332,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SwiftDataProject.SwiftDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.friendface.FriendFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C25ED9D62B4140FE00355B3E /* Build configuration list for PBXProject "SwiftDataProject" */ = {
+		C233444E2B49284600A67428 /* Build configuration list for PBXProject "FriendFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25ED9E72B41410000355B3E /* Debug */,
-				C25ED9E82B41410000355B3E /* Release */,
+				C233445F2B49284800A67428 /* Debug */,
+				C23344602B49284800A67428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C25ED9E92B41410000355B3E /* Build configuration list for PBXNativeTarget "SwiftDataProject" */ = {
+		C23344612B49284800A67428 /* Build configuration list for PBXNativeTarget "FriendFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25ED9EA2B41410000355B3E /* Debug */,
-				C25ED9EB2B41410000355B3E /* Release */,
+				C23344622B49284800A67428 /* Debug */,
+				C23344632B49284800A67428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C25ED9D32B4140FE00355B3E /* Project object */;
+	rootObject = C233444B2B49284600A67428 /* Project object */;
 }

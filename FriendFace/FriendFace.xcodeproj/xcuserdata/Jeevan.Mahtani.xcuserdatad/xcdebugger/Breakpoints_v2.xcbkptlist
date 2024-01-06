@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "08F6CBFB-91AF-45FF-B45D-232568BCC15C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FriendFace/UserListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 40ab60fc17a2bc30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 76a26ab2cc49640c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 4159d5d0f149c03e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 40ab60fc17a2bc30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 76a26ab2cc49640c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "BC2224FB-4EED-4BC1-B1BC-807C552DE5B4 - 4159d5d0f149c03e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in FriendFace.UserListView.body.getter : some"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/FriendFace/UserListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFD748F8-571D-40C1-A20B-D7E280090457"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AFD748F8-571D-40C1-A20B-D7E280090457 - b229a5e31032408e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "AFD748F8-571D-40C1-A20B-D7E280090457 - 84a66d93f280d257"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "AFD748F8-571D-40C1-A20B-D7E280090457 - 1261a4e72499c8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "AFD748F8-571D-40C1-A20B-D7E280090457 - 58a5b79c1d747a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A5FE402-6E58-4329-A73B-CD1E42B957BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A5FE402-6E58-4329-A73B-CD1E42B957BF - b229a5e31032408e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "5A5FE402-6E58-4329-A73B-CD1E42B957BF - 84a66d93f280d257"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5A5FE402-6E58-4329-A73B-CD1E42B957BF - 1261a4e72499c8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "5A5FE402-6E58-4329-A73B-CD1E42B957BF - 58a5b79c1d747a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for FriendFace.UserFetcher.retrieveUserData(into: Swift.Array&lt;FriendFace.User&gt;) async -&gt; Swift.Array&lt;FriendFace.User&gt;"
+                  moduleName = "FriendFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/onboarding/FriendFace/UserFetcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCCDC574-2909-4D92-88DD-4B75B64D0494"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AE1B2FB-201D-4800-B5D3-A74726D4C156"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BC22D07-1B29-41E8-9333-39BF60B69CC5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15978C82-A72D-4C20-AB8B-7742799F9B97"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "954BE642-FE45-41B7-972C-EDDFA4D21EC2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3A1D027-2B23-436D-BDCE-94C4677C7E33"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UserFetcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "retrieveUserData(into:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

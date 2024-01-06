@@ -7,34 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C20458432B444C1A005E0C2F /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20458422B444C1A005E0C2F /* UsersView.swift */; };
-		C22E63AD2B4453D5005A8959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E63AC2B4453D5005A8959 /* ContentView.swift */; };
-		C23344472B455C6A00A67428 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23344462B455C6A00A67428 /* Job.swift */; };
-		C25ED9DF2B4140FE00355B3E /* SwiftDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */; };
-		C25ED9E12B4140FE00355B3E /* AddEditUserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */; };
-		C25ED9E32B41410000355B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25ED9E22B41410000355B3E /* Assets.xcassets */; };
-		C25ED9E62B41410000355B3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25ED9E52B41410000355B3E /* Preview Assets.xcassets */; };
-		C25ED9ED2B41414F00355B3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9EC2B41414F00355B3E /* User.swift */; };
-		C25ED9EF2B4141AD00355B3E /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9EE2B4141AD00355B3E /* EditUserView.swift */; };
-		C25ED9F32B41483500355B3E /* PredicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25ED9F22B41483500355B3E /* PredicateView.swift */; };
+		C26571E12B43D1E60069B4D9 /* UIClonesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26571E02B43D1E60069B4D9 /* UIClonesApp.swift */; };
+		C26571E32B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26571E22B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift */; };
+		C26571E52B43D1E80069B4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26571E42B43D1E80069B4D9 /* Assets.xcassets */; };
+		C26571E82B43D1E80069B4D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26571E72B43D1E80069B4D9 /* Preview Assets.xcassets */; };
+		C26571EF2B43D4580069B4D9 /* RGBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26571EE2B43D4580069B4D9 /* RGBColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C20458422B444C1A005E0C2F /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
-		C22E63AC2B4453D5005A8959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C23344462B455C6A00A67428 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataProjectApp.swift; sourceTree = "<group>"; };
-		C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditUserHomeView.swift; sourceTree = "<group>"; };
-		C25ED9E22B41410000355B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C25ED9E52B41410000355B3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C25ED9EC2B41414F00355B3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C25ED9EE2B4141AD00355B3E /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
-		C25ED9F22B41483500355B3E /* PredicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateView.swift; sourceTree = "<group>"; };
+		C26571DD2B43D1E60069B4D9 /* UIClones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIClones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26571E02B43D1E60069B4D9 /* UIClonesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIClonesApp.swift; sourceTree = "<group>"; };
+		C26571E22B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuikAppOTAInstallingView.swift; sourceTree = "<group>"; };
+		C26571E42B43D1E80069B4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26571E72B43D1E80069B4D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C26571EE2B43D4580069B4D9 /* RGBColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C25ED9D82B4140FE00355B3E /* Frameworks */ = {
+		C26571DA2B43D1E60069B4D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C25ED9D22B4140FE00355B3E = {
+		C26571D42B43D1E60069B4D9 = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DD2B4140FE00355B3E /* SwiftDataProject */,
-				C25ED9DC2B4140FE00355B3E /* Products */,
+				C26571DF2B43D1E60069B4D9 /* UIClones */,
+				C26571DE2B43D1E60069B4D9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C25ED9DC2B4140FE00355B3E /* Products */ = {
+		C26571DE2B43D1E60069B4D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */,
+				C26571DD2B43D1E60069B4D9 /* UIClones.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C25ED9DD2B4140FE00355B3E /* SwiftDataProject */ = {
+		C26571DF2B43D1E60069B4D9 /* UIClones */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9DE2B4140FE00355B3E /* SwiftDataProjectApp.swift */,
-				C25ED9EE2B4141AD00355B3E /* EditUserView.swift */,
-				C25ED9E02B4140FE00355B3E /* AddEditUserHomeView.swift */,
-				C25ED9EC2B41414F00355B3E /* User.swift */,
-				C23344462B455C6A00A67428 /* Job.swift */,
-				C25ED9E22B41410000355B3E /* Assets.xcassets */,
-				C25ED9E42B41410000355B3E /* Preview Content */,
-				C25ED9F22B41483500355B3E /* PredicateView.swift */,
-				C20458422B444C1A005E0C2F /* UsersView.swift */,
-				C22E63AC2B4453D5005A8959 /* ContentView.swift */,
+				C26571E02B43D1E60069B4D9 /* UIClonesApp.swift */,
+				C26571E22B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift */,
+				C26571E42B43D1E80069B4D9 /* Assets.xcassets */,
+				C26571E62B43D1E80069B4D9 /* Preview Content */,
+				C26571EE2B43D4580069B4D9 /* RGBColors.swift */,
 			);
-			path = SwiftDataProject;
+			path = UIClones;
 			sourceTree = "<group>";
 		};
-		C25ED9E42B41410000355B3E /* Preview Content */ = {
+		C26571E62B43D1E80069B4D9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C25ED9E52B41410000355B3E /* Preview Assets.xcassets */,
+				C26571E72B43D1E80069B4D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +73,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C25ED9DA2B4140FE00355B3E /* SwiftDataProject */ = {
+		C26571DC2B43D1E60069B4D9 /* UIClones */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C25ED9E92B41410000355B3E /* Build configuration list for PBXNativeTarget "SwiftDataProject" */;
+			buildConfigurationList = C26571EB2B43D1E80069B4D9 /* Build configuration list for PBXNativeTarget "UIClones" */;
 			buildPhases = (
-				C25ED9D72B4140FE00355B3E /* Sources */,
-				C25ED9D82B4140FE00355B3E /* Frameworks */,
-				C25ED9D92B4140FE00355B3E /* Resources */,
+				C26571D92B43D1E60069B4D9 /* Sources */,
+				C26571DA2B43D1E60069B4D9 /* Frameworks */,
+				C26571DB2B43D1E60069B4D9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftDataProject;
-			productName = SwiftDataProject;
-			productReference = C25ED9DB2B4140FE00355B3E /* SwiftDataProject.app */;
+			name = UIClones;
+			productName = UIClones;
+			productReference = C26571DD2B43D1E60069B4D9 /* UIClones.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C25ED9D32B4140FE00355B3E /* Project object */ = {
+		C26571D52B43D1E60069B4D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					C25ED9DA2B4140FE00355B3E = {
+					C26571DC2B43D1E60069B4D9 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = C25ED9D62B4140FE00355B3E /* Build configuration list for PBXProject "SwiftDataProject" */;
+			buildConfigurationList = C26571D82B43D1E60069B4D9 /* Build configuration list for PBXProject "UIClones" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = C25ED9D22B4140FE00355B3E;
-			productRefGroup = C25ED9DC2B4140FE00355B3E /* Products */;
+			mainGroup = C26571D42B43D1E60069B4D9;
+			productRefGroup = C26571DE2B43D1E60069B4D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C25ED9DA2B4140FE00355B3E /* SwiftDataProject */,
+				C26571DC2B43D1E60069B4D9 /* UIClones */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C25ED9D92B4140FE00355B3E /* Resources */ = {
+		C26571DB2B43D1E60069B4D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25ED9E62B41410000355B3E /* Preview Assets.xcassets in Resources */,
-				C25ED9E32B41410000355B3E /* Assets.xcassets in Resources */,
+				C26571E82B43D1E80069B4D9 /* Preview Assets.xcassets in Resources */,
+				C26571E52B43D1E80069B4D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C25ED9D72B4140FE00355B3E /* Sources */ = {
+		C26571D92B43D1E60069B4D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25ED9E12B4140FE00355B3E /* AddEditUserHomeView.swift in Sources */,
-				C25ED9EF2B4141AD00355B3E /* EditUserView.swift in Sources */,
-				C22E63AD2B4453D5005A8959 /* ContentView.swift in Sources */,
-				C25ED9F32B41483500355B3E /* PredicateView.swift in Sources */,
-				C25ED9DF2B4140FE00355B3E /* SwiftDataProjectApp.swift in Sources */,
-				C25ED9ED2B41414F00355B3E /* User.swift in Sources */,
-				C20458432B444C1A005E0C2F /* UsersView.swift in Sources */,
-				C23344472B455C6A00A67428 /* Job.swift in Sources */,
+				C26571E32B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift in Sources */,
+				C26571E12B43D1E60069B4D9 /* UIClonesApp.swift in Sources */,
+				C26571EF2B43D4580069B4D9 /* RGBColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C25ED9E72B41410000355B3E /* Debug */ = {
+		C26571E92B43D1E80069B4D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		C25ED9E82B41410000355B3E /* Release */ = {
+		C26571EA2B43D1E80069B4D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,64 +268,60 @@
 			};
 			name = Release;
 		};
-		C25ED9EA2B41410000355B3E /* Debug */ = {
+		C26571EC2B43D1E80069B4D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Y927CFRKM;
+				DEVELOPMENT_ASSET_PATHS = "\"UIClones/Preview Content\"";
+				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SwiftDataProject.SwiftDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.UIClones.UIClones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C25ED9EB2B41410000355B3E /* Release */ = {
+		C26571ED2B43D1E80069B4D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 4Y927CFRKM;
+				DEVELOPMENT_ASSET_PATHS = "\"UIClones/Preview Content\"";
+				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.SwiftDataProject.SwiftDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learning.UIClones.UIClones;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,25 +331,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C25ED9D62B4140FE00355B3E /* Build configuration list for PBXProject "SwiftDataProject" */ = {
+		C26571D82B43D1E60069B4D9 /* Build configuration list for PBXProject "UIClones" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25ED9E72B41410000355B3E /* Debug */,
-				C25ED9E82B41410000355B3E /* Release */,
+				C26571E92B43D1E80069B4D9 /* Debug */,
+				C26571EA2B43D1E80069B4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C25ED9E92B41410000355B3E /* Build configuration list for PBXNativeTarget "SwiftDataProject" */ = {
+		C26571EB2B43D1E80069B4D9 /* Build configuration list for PBXNativeTarget "UIClones" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C25ED9EA2B41410000355B3E /* Debug */,
-				C25ED9EB2B41410000355B3E /* Release */,
+				C26571EC2B43D1E80069B4D9 /* Debug */,
+				C26571ED2B43D1E80069B4D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C25ED9D32B4140FE00355B3E /* Project object */;
+	rootObject = C26571D52B43D1E60069B4D9 /* Project object */;
 }
