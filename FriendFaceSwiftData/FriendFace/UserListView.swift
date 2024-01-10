@@ -15,7 +15,8 @@ struct UserListView: View {
     @State private var userFetcher = UserFetcher(url: UserFetcher.usersURL)
     var body: some View {
         NavigationStack {
-            List(users) { user in
+            List { 
+                ForEach(users) { user in
                 NavigationLink(destination: UserDetailView(user: user)) {
                     HStack {
                         VStack(alignment: .leading) {
@@ -37,18 +38,27 @@ struct UserListView: View {
                         } 
                     }
                 }
-            }
-            .task {
-                if users.isEmpty {
-                    let retrievedUsers = await userFetcher.retrieveUserData()
-                    for user in retrievedUsers {
-                        modelContext.insert(user)
-                    }
+                }.onDelete(perform: deleteUser)
+        }
+        .task {
+            if users.isEmpty {
+                let retrievedUsers = await userFetcher.retrieveUserData()
+                for user in retrievedUsers {
+                    modelContext.insert(user)
                 }
             }
-            .navigationTitle("Users")
+        }
+        .navigationTitle("Users")
+        }        
+    }
+    
+    func deleteUser(at offsets: IndexSet) {
+        for offset in offsets {
+            let user = users[offset]
+            modelContext.delete(user)
         }
     }
+    
 }
 
 #Preview {

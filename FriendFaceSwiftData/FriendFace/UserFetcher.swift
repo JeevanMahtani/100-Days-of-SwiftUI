@@ -24,9 +24,8 @@ class UserFetcher {
             return [User]()
         }
         
-        
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, response) = try await URLSession.shared.data(from: url)
             
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
