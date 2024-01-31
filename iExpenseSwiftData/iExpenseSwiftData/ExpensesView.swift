@@ -33,6 +33,9 @@ struct ExpensesView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .listRowBackground(expenseStyle(amount: expense.amount))
                     .foregroundColor(.white) 
+                    .accessibilityElement()
+                    .accessibilityValue("\(expense.name) \(expense.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))")
+                    .accessibilityHint("\(expense.type) expense")
                     
                 }
                 .onDelete(perform: { indexSet in

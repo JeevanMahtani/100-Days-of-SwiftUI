@@ -19,7 +19,7 @@ struct MissionView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Image(mission.image) 
+                Image(decorative: mission.image) 
                     .resizable()
                     .scaledToFit()
                     .containerRelativeFrame(.horizontal) {
@@ -29,8 +29,11 @@ struct MissionView: View {
                 VStack(alignment: .leading) {
                     Text("Launch date: \(mission.formattedDate)")
                        .font(.title2).bold()
+                   
                 }
                 .padding(.top)
+                .accessibilityElement()
+                .accessibilityValue("Launch Date: \(mission.formattedDate == "N/A" ? "Not Applicable" : "\(mission.formattedDate)")")
                 
                 VStack(alignment: .leading) {
                     

@@ -28,10 +28,15 @@ struct MoonshotListView: View {
                                             Text(mission.formattedDate)
                                                 .font(.headline)
                                         }
+                                        .accessibilityElement()
+                                        .accessibilityElement(children: .combine)
+                                        .accessibilityLabel("Mission: \(mission.displayName), ")
+                                        .accessibilityValue("Launch Date: \(mission.formattedDate == "N/A" ? "Not Applicable" : "\(mission.formattedDate)")")
+                                        .accessibilityHint("Tap to view more details about the mission")
                                         
                                         Spacer()
                                         
-                                        Image(mission.image)
+                                        Image(decorative: mission.image)
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 100, height : 80)

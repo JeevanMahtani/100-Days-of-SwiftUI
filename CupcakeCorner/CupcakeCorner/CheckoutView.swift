@@ -19,15 +19,20 @@ struct CheckoutView: View {
     var body: some View {
         ScrollView {
             VStack {
-                AsyncImage(url: URL(string: "https://hws.dev/img/cupcakes@3x.jpg"),
-                           scale: 3) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                } placeholder: {
-                    ProgressView()
+                
+                Group {
+                    AsyncImage(url: URL(string: "https://hws.dev/img/cupcakes@3x.jpg"),
+                               scale: 3) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } placeholder: {
+                        ProgressView()
+                        
+                    }
                 }
                 .frame(height: 233)
+                .accessibilityElement(children: .ignore)
                 
                 Text("Your total cost is \(order.cost, format: .currency(code: "USD"))")
                     .font(.title)

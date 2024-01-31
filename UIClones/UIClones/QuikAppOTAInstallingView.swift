@@ -10,6 +10,7 @@ import SwiftUI
 struct QuikAppOTAInstallingView: View {
     
     @State private var rotation = 0.0
+    @State private var toggleState = false
     
     let customBlue = Color(red: 23, green: 176, blue: 253)
     let customGray = Color(red: 164, green: 165, blue: 165)
@@ -61,6 +62,9 @@ struct QuikAppOTAInstallingView: View {
                 Text("your camera during this process.")
                     .font(.system(size: 16))
             }
+            
+            CustomSwitch(isOn: $toggleState)
+            CustomSegmentedPicker()
                         
             Spacer()
             

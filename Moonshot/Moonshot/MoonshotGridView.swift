@@ -17,7 +17,7 @@ struct MoonshotGridView: View {
                 ForEach(missions) { mission in
                     NavigationLink(value: mission) {
                         VStack {
-                            Image(mission.image)
+                            Image(decorative: mission.image)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height : 100)
@@ -35,6 +35,11 @@ struct MoonshotGridView: View {
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)
+                            .accessibilityElement()
+                            .accessibilityElement(children: .combine)
+                            .accessibilityLabel("Mission: \(mission.displayName), ")
+                            .accessibilityValue("Launch Date: \(mission.formattedDate == "N/A" ? "Not Applicable" : "\(mission.formattedDate)")")
+                            .accessibilityHint("Tap to view more details about the mission")
                         }
                         .clipShape(.rect(cornerRadius: 10))
                         .overlay(RoundedRectangle(cornerRadius:  10)

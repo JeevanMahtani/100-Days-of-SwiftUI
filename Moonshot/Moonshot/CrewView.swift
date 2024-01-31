@@ -17,7 +17,7 @@ struct CrewView: View {
                         AstronautView(astronaut: crewMember.astronaut)
                     } label: {
                         HStack {
-                            Image(crewMember.astronaut.id)
+                            Image(decorative: crewMember.astronaut.id)
                                 .resizable()
                                 .frame(width: 104, height: 72)
                                 .clipShape(.capsule)
@@ -31,6 +31,9 @@ struct CrewView: View {
                                 Text(crewMember.role)
                                     .fontStyle(for: crewMember.role)
                             }
+                            .accessibilityElement(children: .combine)
+                            .accessibilityLabel("\(crewMember.astronaut.name), role: \(crewMember.role)")
+                            .accessibilityHint("Tap to view more information about this astronaut")
                         }
                         .padding(.horizontal)
                     }
