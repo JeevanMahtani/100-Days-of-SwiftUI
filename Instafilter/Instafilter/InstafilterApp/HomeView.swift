@@ -38,6 +38,7 @@ struct HomeView: View {
              
                 PhotosPicker(selection: $selectedItem) {
                     if let processedImage {
+                        Text("Picture")
                         processedImage
                             .resizable()
                             .scaledToFit()

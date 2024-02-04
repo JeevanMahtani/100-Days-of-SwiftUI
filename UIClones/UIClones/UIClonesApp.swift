@@ -11,7 +11,7 @@ import SwiftUI
 struct UIClonesApp: App {
     var body: some Scene {
         WindowGroup {
-            ProgressorView()
+            QuikAppOTAInstallingView()
         }
     }
 }
