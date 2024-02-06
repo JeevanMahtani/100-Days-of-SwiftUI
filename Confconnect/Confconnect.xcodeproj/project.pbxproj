@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23672F02B712FE1004EC5E0 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23672EF2B712FE1004EC5E0 /* LocationFetcher.swift */; };
+		C23672F22B713228004EC5E0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23672F12B713228004EC5E0 /* Location.swift */; };
+		C24D8CDD2B71FAC7009C7362 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D8CDC2B71FAC7009C7362 /* Contact.swift */; };
 		C2AC76572B6B3164009BBF50 /* ConfconnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC76562B6B3164009BBF50 /* ConfconnectApp.swift */; };
 		C2AC76592B6B3164009BBF50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC76582B6B3164009BBF50 /* HomeView.swift */; };
 		C2AC765B2B6B3168009BBF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AC765A2B6B3168009BBF50 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C23672EF2B712FE1004EC5E0 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		C23672F12B713228004EC5E0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C24D8CDC2B71FAC7009C7362 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		C2AC76532B6B3164009BBF50 /* Confconnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Confconnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AC76562B6B3164009BBF50 /* ConfconnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfconnectApp.swift; sourceTree = "<group>"; };
 		C2AC76582B6B3164009BBF50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				C2D8C70C2B6E642A004C9F4D /* ContactListView.swift */,
 				C2D8C70E2B6E7601004C9F4D /* NameViewModel.swift */,
 				C2D8C7102B6F92E4004C9F4D /* ContactPhotoView.swift */,
+				C23672EF2B712FE1004EC5E0 /* LocationFetcher.swift */,
+				C23672F12B713228004EC5E0 /* Location.swift */,
+				C24D8CDC2B71FAC7009C7362 /* Contact.swift */,
 			);
 			path = Confconnect;
 			sourceTree = "<group>";
@@ -154,7 +163,10 @@
 			files = (
 				C2D8C70D2B6E642A004C9F4D /* ContactListView.swift in Sources */,
 				C2D8C7112B6F92E4004C9F4D /* ContactPhotoView.swift in Sources */,
+				C24D8CDD2B71FAC7009C7362 /* Contact.swift in Sources */,
+				C23672F02B712FE1004EC5E0 /* LocationFetcher.swift in Sources */,
 				C2AC76652B6B3196009BBF50 /* ContactViewModel.swift in Sources */,
+				C23672F22B713228004EC5E0 /* Location.swift in Sources */,
 				C2AC76672B6B3966009BBF50 /* NameView.swift in Sources */,
 				C2AC76592B6B3164009BBF50 /* HomeView.swift in Sources */,
 				C2AC76572B6B3164009BBF50 /* ConfconnectApp.swift in Sources */,
@@ -295,6 +307,7 @@
 				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your current location to store your photo's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +337,7 @@
 				DEVELOPMENT_TEAM = WJX4LW536A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your current location to store your photo's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -19,7 +19,7 @@ struct ContactListView: View {
             Form {
                 List {
                     ForEach(viewModel.contacts.sorted()) { contact in
-                        NavigationLink(destination: ContactPhotoView(image: contact.image ?? Image(systemName: "person.crop.circle.fill"))) {
+                        NavigationLink(destination: ContactPhotoView(image: contact.image ?? Image(systemName: "person.crop.circle.fill"), contact: contact)) {
                             HStack {
                                 contact.image?
                                     .resizable()

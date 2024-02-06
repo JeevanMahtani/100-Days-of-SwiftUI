@@ -218,8 +218,8 @@
             filePath = "Confconnect/ContactViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "init(forPreview:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,8 +234,8 @@
             filePath = "Confconnect/ContactViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "createContact()"
             landmarkType = "7">
          </BreakpointContent>
@@ -387,102 +387,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "57619A54-EFBC-413B-A52F-74C67F0A4B10"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Confconnect/ContactViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "image"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "03AA6525-FF94-4FA5-BB15-1901983E7FC8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Confconnect/ContactViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "image"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "03AA6525-FF94-4FA5-BB15-1901983E7FC8 - a4af26b69027d9ab"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Confconnect.Contact.image.getter : Swift.Optional&lt;SwiftUI.Image&gt;"
-                  moduleName = "Confconnect"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Jeevan.Mahtani/Documents/100-Days-of-SwiftUI/Confconnect/Confconnect/ContactViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "03AA6525-FF94-4FA5-BB15-1901983E7FC8 - a4af26b69027d9ab"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Confconnect.Contact.image.getter : Swift.Optional&lt;SwiftUI.Image&gt;"
-                  moduleName = "Confconnect"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Jeevan.Mahtani/Documents/100-Days-of-SwiftUI/Confconnect/Confconnect/ContactViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9BD6633D-BF5B-488E-9617-0FF6C95D2F30"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Confconnect/ContactViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "image"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "36C9CCEF-8C60-4DE6-8A24-749310E710B8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Confconnect/ContactViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "image"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9FB8FF46-5ECA-46D9-AD52-C4D0EE109DAB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -588,6 +492,54 @@
                   startingLineNumber = "25"
                   endingLineNumber = "25"
                   offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CBDDF84-6779-4787-A40C-BB1F4D215848"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Confconnect/ContactViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "getPhotoLocation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CBDDF84-6779-4787-A40C-BB1F4D215848 - a498eb78893d27e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Confconnect.ContactViewModel.getPhotoLocation() -&gt; Swift.Optional&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "Confconnect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/100-Days-of-SwiftUI/Confconnect/Confconnect/ContactViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "156"
+                  endingLineNumber = "156"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "5CBDDF84-6779-4787-A40C-BB1F4D215848 - a498eb78893d3906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Confconnect.ContactViewModel.getPhotoLocation() -&gt; Swift.Optional&lt;__C.CLLocationCoordinate2D&gt;"
+                  moduleName = "Confconnect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jeevan.Mahtani/Documents/100-Days-of-SwiftUI/Confconnect/Confconnect/ContactViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "40">
                </Location>
             </Locations>
          </BreakpointContent>
