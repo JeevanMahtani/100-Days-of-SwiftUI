@@ -51,7 +51,6 @@ struct HomeView: View {
                         viewModel.save($0, image: uploadedImage)
                     }
                 }
-
             }
         }
         .padding()
