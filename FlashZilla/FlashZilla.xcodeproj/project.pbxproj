@@ -15,6 +15,7 @@
 		C263F4A82B9DBA48007AF51E /* TimerPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C263F4A72B9DBA48007AF51E /* TimerPublisherView.swift */; };
 		C263F4AA2B9DBD36007AF51E /* BackgroundNotifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C263F4A92B9DBD36007AF51E /* BackgroundNotifierView.swift */; };
 		C263F4AC2B9DBF7C007AF51E /* AccessibilityNeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C263F4AB2B9DBF7C007AF51E /* AccessibilityNeedsView.swift */; };
+		C2933F3C2BA5A1E400700BCE /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2933F3B2BA5A1E400700BCE /* CardViewModel.swift */; };
 		C2BBE7D32BA2EDF800A30E3B /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBE7D22BA2EDF800A30E3B /* EditCards.swift */; };
 		C2C5B6622B9C000300F474A2 /* FlashZillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5B6612B9C000300F474A2 /* FlashZillaApp.swift */; };
 		C2C5B6642B9C000300F474A2 /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5B6632B9C000300F474A2 /* CustomGestureView.swift */; };
@@ -34,6 +35,7 @@
 		C263F4A72B9DBA48007AF51E /* TimerPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPublisherView.swift; sourceTree = "<group>"; };
 		C263F4A92B9DBD36007AF51E /* BackgroundNotifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundNotifierView.swift; sourceTree = "<group>"; };
 		C263F4AB2B9DBF7C007AF51E /* AccessibilityNeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityNeedsView.swift; sourceTree = "<group>"; };
+		C2933F3B2BA5A1E400700BCE /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		C2BBE7D22BA2EDF800A30E3B /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		C2C5B65E2B9C000300F474A2 /* FlashZilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashZilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C5B6612B9C000300F474A2 /* FlashZillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashZillaApp.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C2D867172BA09AC10062900B /* CardView.swift */,
 				C2D867192BA09CA70062900B /* HomeView.swift */,
 				C2BBE7D22BA2EDF800A30E3B /* EditCards.swift */,
+				C2933F3B2BA5A1E400700BCE /* CardViewModel.swift */,
 			);
 			path = FlashZilla;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				C263F2602B9C07B0007AF51E /* RotateGestureView.swift in Sources */,
 				C2D867182BA09AC10062900B /* CardView.swift in Sources */,
 				C2D867162BA099F70062900B /* Card.swift in Sources */,
+				C2933F3C2BA5A1E400700BCE /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

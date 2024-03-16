@@ -21,10 +21,14 @@ struct HomeView: View {
     
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
-    @State private var cards = [Card]()
+    @State private var viewModel = CardViewModel()
     @State private var showingEditScreen = false
     
     @State private var timeRemaining = 100
+    
+    var cards : [Card] {
+        viewModel.cards
+    }
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -148,11 +152,11 @@ struct HomeView: View {
     
     func remove(card: Card, isWrong: Bool) {
         guard let index = cards.firstIndex(where: {card.id == $0.id}) else { return }
-        cards.remove(at: index)
+        viewModel.removeCard(at: index)
         if isWrong {
             var newCard = card
             newCard.id = UUID()
-            cards.insert(newCard, at: 0)
+            viewModel.insertCard(newCard, at: 0)
         }
         if cards.isEmpty {
             isActive = false
@@ -162,15 +166,7 @@ struct HomeView: View {
     func resetCards() {
         timeRemaining = 100
         isActive = true
-        loadData()
-    }
-    
-    func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
+        viewModel.loadData()
     }
 }
 
