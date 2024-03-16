@@ -14,6 +14,7 @@
 		C26571E82B43D1E80069B4D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26571E72B43D1E80069B4D9 /* Preview Assets.xcassets */; };
 		C26571EF2B43D4580069B4D9 /* RGBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26571EE2B43D4580069B4D9 /* RGBColors.swift */; };
 		C2AC76492B6A4144009BBF50 /* ProgressorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AC76482B6A4144009BBF50 /* ProgressorView.swift */; };
+		C2BBE7D12BA1F89200A30E3B /* ItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBE7D02BA1F89200A30E3B /* ItemDescription.swift */; };
 		C2D3F56D2B68AFBB004DB0E8 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D3F56C2B68AFBB004DB0E8 /* CustomSwitch.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		C26571E72B43D1E80069B4D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C26571EE2B43D4580069B4D9 /* RGBColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColors.swift; sourceTree = "<group>"; };
 		C2AC76482B6A4144009BBF50 /* ProgressorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressorView.swift; sourceTree = "<group>"; };
+		C2BBE7D02BA1F89200A30E3B /* ItemDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescription.swift; sourceTree = "<group>"; };
 		C2D3F56C2B68AFBB004DB0E8 /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				C26571E42B43D1E80069B4D9 /* Assets.xcassets */,
 				C26571E62B43D1E80069B4D9 /* Preview Content */,
 				C26571EE2B43D4580069B4D9 /* RGBColors.swift */,
+				C2BBE7D02BA1F89200A30E3B /* ItemDescription.swift */,
 			);
 			path = UIClones;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26571E32B43D1E60069B4D9 /* QuikAppOTAInstallingView.swift in Sources */,
+				C2BBE7D12BA1F89200A30E3B /* ItemDescription.swift in Sources */,
 				C26571E12B43D1E60069B4D9 /* UIClonesApp.swift in Sources */,
 				C246CC0A2B69F459004E745A /* CustomSegmentedPicker.swift in Sources */,
 				C2D3F56D2B68AFBB004DB0E8 /* CustomSwitch.swift in Sources */,

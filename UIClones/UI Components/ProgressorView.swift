@@ -55,7 +55,7 @@ struct ProgressorView: View {
 
         
         Button("Increase") {
-            withAnimation(.easeInOut(duration: 1.5)) {
+            withAnimation(.snappy(duration: 1.5)) {
                 progress()
        
             }
