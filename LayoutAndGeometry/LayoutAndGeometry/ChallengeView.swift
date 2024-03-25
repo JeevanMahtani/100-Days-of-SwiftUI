@@ -25,7 +25,6 @@ struct ChallengeView: View {
             ScrollView(.vertical) {
                 ForEach(0..<50) { index in
                     GeometryReader { proxy in
-                        
                         let minY = proxy.frame(in: .global).minY
                         let maxY = fullView.size.height - proxy.frame(in: .global).maxY
                    
